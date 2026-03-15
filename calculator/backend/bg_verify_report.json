@@ -1,0 +1,6172 @@
+{
+  "mismatches": [
+    {
+      "city_a": "asenovgrad",
+      "city_b": "aytos",
+      "cached_km": 255,
+      "ors_km": 239.9,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "blagoevgrad",
+      "cached_km": 240,
+      "ors_km": 280.5,
+      "diff_km": 40.5
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "botevgrad",
+      "cached_km": 227,
+      "ors_km": 215.4,
+      "diff_km": 11.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "burgas",
+      "cached_km": 275,
+      "ors_km": 239.1,
+      "diff_km": 35.9
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "chirpan",
+      "cached_km": 75,
+      "ors_km": 45.4,
+      "diff_km": 29.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "dimitrovgrad",
+      "cached_km": 70,
+      "ors_km": 84.4,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "dobrich",
+      "cached_km": 435,
+      "ors_km": 394.4,
+      "diff_km": 40.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "dupnitsa",
+      "cached_km": 200,
+      "ors_km": 249.8,
+      "diff_km": 49.8
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "gabrovo",
+      "cached_km": 180,
+      "ors_km": 221.5,
+      "diff_km": 41.5
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 235,
+      "ors_km": 223.6,
+      "diff_km": 11.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "haskovo",
+      "cached_km": 100,
+      "ors_km": 87.5,
+      "diff_km": 12.5
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "kardzhali",
+      "cached_km": 130,
+      "ors_km": 76.0,
+      "diff_km": 54.0
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "kyustendil",
+      "cached_km": 260,
+      "ors_km": 271.3,
+      "diff_km": 11.3
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "lom",
+      "cached_km": 375,
+      "ors_km": 351.6,
+      "diff_km": 23.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "lovech",
+      "cached_km": 250,
+      "ors_km": 177.6,
+      "diff_km": 72.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "montana",
+      "cached_km": 335,
+      "ors_km": 308.3,
+      "diff_km": 26.7
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "panagyurishte",
+      "cached_km": 110,
+      "ors_km": 99.5,
+      "diff_km": 10.5
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "pazardzhik",
+      "cached_km": 60,
+      "ors_km": 74.6,
+      "diff_km": 14.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "petrich",
+      "cached_km": 260,
+      "ors_km": 129.4,
+      "diff_km": 130.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "pleven",
+      "cached_km": 285,
+      "ors_km": 313.3,
+      "diff_km": 28.3
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "pomorie",
+      "cached_km": 295,
+      "ors_km": 255.7,
+      "diff_km": 39.3
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "razgrad",
+      "cached_km": 345,
+      "ors_km": 308.7,
+      "diff_km": 36.3
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "ruse",
+      "cached_km": 325,
+      "ors_km": 312.6,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "samokov",
+      "cached_km": 140,
+      "ors_km": 155.2,
+      "diff_km": 15.2
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "sandanski",
+      "cached_km": 250,
+      "ors_km": 342.3,
+      "diff_km": 92.3
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "shumen",
+      "cached_km": 345,
+      "ors_km": 300.3,
+      "diff_km": 44.7
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "sliven",
+      "cached_km": 180,
+      "ors_km": 164.8,
+      "diff_km": 15.2
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "stara zagora",
+      "cached_km": 115,
+      "ors_km": 90.5,
+      "diff_km": 24.5
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "svilengrad",
+      "cached_km": 160,
+      "ors_km": 138.6,
+      "diff_km": 21.4
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "targovishte",
+      "cached_km": 325,
+      "ors_km": 275.4,
+      "diff_km": 49.6
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "troyan",
+      "cached_km": 245,
+      "ors_km": 144.2,
+      "diff_km": 100.8
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "varna",
+      "cached_km": 405,
+      "ors_km": 364.3,
+      "diff_km": 40.7
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "veliko tarnovo",
+      "cached_km": 225,
+      "ors_km": 209.2,
+      "diff_km": 15.8
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "vratsa",
+      "cached_km": 285,
+      "ors_km": 264.2,
+      "diff_km": 20.8
+    },
+    {
+      "city_a": "asenovgrad",
+      "city_b": "yambol",
+      "cached_km": 185,
+      "ors_km": 162.9,
+      "diff_km": 22.1
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "blagoevgrad",
+      "cached_km": 455,
+      "ors_km": 493.8,
+      "diff_km": 38.8
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "botevgrad",
+      "cached_km": 390,
+      "ors_km": 428.7,
+      "diff_km": 38.7
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "chirpan",
+      "cached_km": 180,
+      "ors_km": 197.4,
+      "diff_km": 17.4
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "dimitrovgrad",
+      "cached_km": 210,
+      "ors_km": 196.8,
+      "diff_km": 13.2
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "dobrich",
+      "cached_km": 215,
+      "ors_km": 169.8,
+      "diff_km": 45.2
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "dupnitsa",
+      "cached_km": 415,
+      "ors_km": 463.1,
+      "diff_km": 48.1
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 290,
+      "ors_km": 220.4,
+      "diff_km": 69.6
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "gotse delchev",
+      "cached_km": 440,
+      "ors_km": 429.5,
+      "diff_km": 10.5
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "harmanli",
+      "cached_km": 250,
+      "ors_km": 275.4,
+      "diff_km": 25.4
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "haskovo",
+      "cached_km": 240,
+      "ors_km": 253.8,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "kardzhali",
+      "cached_km": 270,
+      "ors_km": 299.4,
+      "diff_km": 29.4
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "karlovo",
+      "cached_km": 225,
+      "ors_km": 292.0,
+      "diff_km": 67.0
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "kazanlak",
+      "cached_km": 180,
+      "ors_km": 207.0,
+      "diff_km": 27.0
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "lom",
+      "cached_km": 530,
+      "ors_km": 564.9,
+      "diff_km": 34.9
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "montana",
+      "cached_km": 490,
+      "ors_km": 521.6,
+      "diff_km": 31.6
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "panagyurishte",
+      "cached_km": 275,
+      "ors_km": 312.8,
+      "diff_km": 37.8
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "pazardzhik",
+      "cached_km": 275,
+      "ors_km": 287.9,
+      "diff_km": 12.9
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "petrich",
+      "cached_km": 510,
+      "ors_km": 342.7,
+      "diff_km": 167.3
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "plovdiv",
+      "cached_km": 235,
+      "ors_km": 251.3,
+      "diff_km": 16.3
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "popovo",
+      "cached_km": 300,
+      "ors_km": 168.1,
+      "diff_km": 131.9
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "razgrad",
+      "cached_km": 310,
+      "ors_km": 147.3,
+      "diff_km": 162.7
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "ruse",
+      "cached_km": 380,
+      "ors_km": 210.0,
+      "diff_km": 170.0
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "samokov",
+      "cached_km": 355,
+      "ors_km": 368.5,
+      "diff_km": 13.5
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "sandanski",
+      "cached_km": 500,
+      "ors_km": 555.6,
+      "diff_km": 55.6
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "shumen",
+      "cached_km": 250,
+      "ors_km": 97.7,
+      "diff_km": 152.3
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "silistra",
+      "cached_km": 335,
+      "ors_km": 210.6,
+      "diff_km": 124.4
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "sliven",
+      "cached_km": 100,
+      "ors_km": 110.2,
+      "diff_km": 10.2
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "stara zagora",
+      "cached_km": 180,
+      "ors_km": 169.8,
+      "diff_km": 10.2
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "targovishte",
+      "cached_km": 290,
+      "ors_km": 121.9,
+      "diff_km": 168.1
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "troyan",
+      "cached_km": 300,
+      "ors_km": 357.7,
+      "diff_km": 57.7
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "veliko tarnovo",
+      "cached_km": 280,
+      "ors_km": 223.1,
+      "diff_km": 56.9
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "vidin",
+      "cached_km": 560,
+      "ors_km": 619.0,
+      "diff_km": 59.0
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "vratsa",
+      "cached_km": 440,
+      "ors_km": 477.5,
+      "diff_km": 37.5
+    },
+    {
+      "city_a": "aytos",
+      "city_b": "yambol",
+      "cached_km": 70,
+      "ors_km": 91.2,
+      "diff_km": 21.2
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "botevgrad",
+      "cached_km": 157,
+      "ors_km": 168.1,
+      "diff_km": 11.1
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "burgas",
+      "cached_km": 475,
+      "ors_km": 490.9,
+      "diff_km": 15.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "chirpan",
+      "cached_km": 275,
+      "ors_km": 301.1,
+      "diff_km": 26.1
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "dimitrovgrad",
+      "cached_km": 270,
+      "ors_km": 336.3,
+      "diff_km": 66.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "dobrich",
+      "cached_km": 567,
+      "ors_km": 646.2,
+      "diff_km": 79.2
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 367,
+      "ors_km": 339.2,
+      "diff_km": 27.8
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "gotse delchev",
+      "cached_km": 85,
+      "ors_km": 103.7,
+      "diff_km": 18.7
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "harmanli",
+      "cached_km": 310,
+      "ors_km": 361.0,
+      "diff_km": 51.0
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "kardzhali",
+      "cached_km": 255,
+      "ors_km": 384.9,
+      "diff_km": 129.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "karlovo",
+      "cached_km": 280,
+      "ors_km": 252.2,
+      "diff_km": 27.8
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "kazanlak",
+      "cached_km": 325,
+      "ors_km": 379.5,
+      "diff_km": 54.5
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "kyustendil",
+      "cached_km": 160,
+      "ors_km": 70.5,
+      "diff_km": 89.5
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "lom",
+      "cached_km": 305,
+      "ors_km": 245.0,
+      "diff_km": 60.0
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "lovech",
+      "cached_km": 242,
+      "ors_km": 259.8,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "montana",
+      "cached_km": 265,
+      "ors_km": 196.4,
+      "diff_km": 68.6
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "nova zagora",
+      "cached_km": 325,
+      "ors_km": 369.9,
+      "diff_km": 44.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "panagyurishte",
+      "cached_km": 230,
+      "ors_km": 249.5,
+      "diff_km": 19.5
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "pazardzhik",
+      "cached_km": 180,
+      "ors_km": 223.5,
+      "diff_km": 43.5
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "petrich",
+      "cached_km": 100,
+      "ors_km": 185.9,
+      "diff_km": 85.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "plovdiv",
+      "cached_km": 220,
+      "ors_km": 258.3,
+      "diff_km": 38.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "pomorie",
+      "cached_km": 495,
+      "ors_km": 507.5,
+      "diff_km": 12.5
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "popovo",
+      "cached_km": 427,
+      "ors_km": 411.1,
+      "diff_km": 15.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "razgrad",
+      "cached_km": 477,
+      "ors_km": 560.6,
+      "diff_km": 83.6
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "ruse",
+      "cached_km": 432,
+      "ors_km": 412.6,
+      "diff_km": 19.4
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "samokov",
+      "cached_km": 100,
+      "ors_km": 78.7,
+      "diff_km": 21.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "sandanski",
+      "cached_km": 75,
+      "ors_km": 62.6,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "sevlievo",
+      "cached_km": 337,
+      "ors_km": 279.4,
+      "diff_km": 57.6
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "shumen",
+      "cached_km": 477,
+      "ors_km": 552.1,
+      "diff_km": 75.1
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "silistra",
+      "cached_km": 552,
+      "ors_km": 532.7,
+      "diff_km": 19.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "sliven",
+      "cached_km": 380,
+      "ors_km": 416.7,
+      "diff_km": 36.7
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "smolyan",
+      "cached_km": 185,
+      "ors_km": 356.3,
+      "diff_km": 171.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "stara zagora",
+      "cached_km": 315,
+      "ors_km": 342.3,
+      "diff_km": 27.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "svilengrad",
+      "cached_km": 360,
+      "ors_km": 390.4,
+      "diff_km": 30.4
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "targovishte",
+      "cached_km": 457,
+      "ors_km": 527.2,
+      "diff_km": 70.2
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "troyan",
+      "cached_km": 277,
+      "ors_km": 257.7,
+      "diff_km": 19.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "varna",
+      "cached_km": 567,
+      "ors_km": 616.1,
+      "diff_km": 49.1
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "veliko tarnovo",
+      "cached_km": 357,
+      "ors_km": 323.6,
+      "diff_km": 33.4
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "velingrad",
+      "cached_km": 200,
+      "ors_km": 121.7,
+      "diff_km": 78.3
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "vidin",
+      "cached_km": 335,
+      "ors_km": 299.1,
+      "diff_km": 35.9
+    },
+    {
+      "city_a": "blagoevgrad",
+      "city_b": "yambol",
+      "cached_km": 385,
+      "ors_km": 414.7,
+      "diff_km": 29.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "burgas",
+      "cached_km": 390,
+      "ors_km": 425.4,
+      "diff_km": 35.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "chirpan",
+      "cached_km": 262,
+      "ors_km": 235.6,
+      "diff_km": 26.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "dimitrovgrad",
+      "cached_km": 257,
+      "ors_km": 270.8,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "dobrich",
+      "cached_km": 410,
+      "ors_km": 580.8,
+      "diff_km": 170.8
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "dupnitsa",
+      "cached_km": 122,
+      "ors_km": 135.7,
+      "diff_km": 13.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 210,
+      "ors_km": 182.1,
+      "diff_km": 27.9
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "gotse delchev",
+      "cached_km": 242,
+      "ors_km": 269.3,
+      "diff_km": 27.3
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "haskovo",
+      "cached_km": 287,
+      "ors_km": 273.9,
+      "diff_km": 13.1
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "karlovo",
+      "cached_km": 255,
+      "ors_km": 118.0,
+      "diff_km": 137.0
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "kazanlak",
+      "cached_km": 210,
+      "ors_km": 173.6,
+      "diff_km": 36.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "kyustendil",
+      "cached_km": 147,
+      "ors_km": 157.2,
+      "diff_km": 10.2
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "lom",
+      "cached_km": 262,
+      "ors_km": 141.8,
+      "diff_km": 120.2
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "lovech",
+      "cached_km": 85,
+      "ors_km": 102.7,
+      "diff_km": 17.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "montana",
+      "cached_km": 222,
+      "ors_km": 98.5,
+      "diff_km": 123.5
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "panagyurishte",
+      "cached_km": 219,
+      "ors_km": 92.9,
+      "diff_km": 126.1
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "pazardzhik",
+      "cached_km": 169,
+      "ors_km": 158.0,
+      "diff_km": 11.0
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "popovo",
+      "cached_km": 270,
+      "ors_km": 254.0,
+      "diff_km": 16.0
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "razgrad",
+      "cached_km": 320,
+      "ors_km": 289.0,
+      "diff_km": 31.0
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "ruse",
+      "cached_km": 275,
+      "ors_km": 255.6,
+      "diff_km": 19.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "samokov",
+      "cached_km": 117,
+      "ors_km": 136.7,
+      "diff_km": 19.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "sevlievo",
+      "cached_km": 180,
+      "ors_km": 122.3,
+      "diff_km": 57.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "shumen",
+      "cached_km": 320,
+      "ors_km": 486.6,
+      "diff_km": 166.6
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "silistra",
+      "cached_km": 395,
+      "ors_km": 375.6,
+      "diff_km": 19.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "sliven",
+      "cached_km": 290,
+      "ors_km": 351.2,
+      "diff_km": 61.2
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "smolyan",
+      "cached_km": 317,
+      "ors_km": 290.9,
+      "diff_km": 26.1
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "stara zagora",
+      "cached_km": 245,
+      "ors_km": 276.9,
+      "diff_km": 31.9
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "svilengrad",
+      "cached_km": 347,
+      "ors_km": 324.9,
+      "diff_km": 22.1
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "troyan",
+      "cached_km": 120,
+      "ors_km": 100.6,
+      "diff_km": 19.4
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "varna",
+      "cached_km": 410,
+      "ors_km": 550.7,
+      "diff_km": 140.7
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "veliko tarnovo",
+      "cached_km": 200,
+      "ors_km": 166.5,
+      "diff_km": 33.5
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "velingrad",
+      "cached_km": 217,
+      "ors_km": 200.9,
+      "diff_km": 16.1
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "vidin",
+      "cached_km": 292,
+      "ors_km": 196.0,
+      "diff_km": 96.0
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "vratsa",
+      "cached_km": 172,
+      "ors_km": 54.4,
+      "diff_km": 117.6
+    },
+    {
+      "city_a": "botevgrad",
+      "city_b": "yambol",
+      "cached_km": 320,
+      "ors_km": 349.3,
+      "diff_km": 29.3
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "dimitrovgrad",
+      "cached_km": 230,
+      "ors_km": 198.0,
+      "diff_km": 32.0
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "dupnitsa",
+      "cached_km": 435,
+      "ors_km": 464.3,
+      "diff_km": 29.3
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 290,
+      "ors_km": 221.6,
+      "diff_km": 68.4
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "gotse delchev",
+      "cached_km": 460,
+      "ors_km": 430.8,
+      "diff_km": 29.2
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "kardzhali",
+      "cached_km": 290,
+      "ors_km": 300.6,
+      "diff_km": 10.6
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "karlovo",
+      "cached_km": 225,
+      "ors_km": 293.3,
+      "diff_km": 68.3
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "kazanlak",
+      "cached_km": 180,
+      "ors_km": 208.3,
+      "diff_km": 28.3
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "lom",
+      "cached_km": 530,
+      "ors_km": 566.1,
+      "diff_km": 36.1
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "montana",
+      "cached_km": 490,
+      "ors_km": 522.8,
+      "diff_km": 32.8
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "nova zagora",
+      "cached_km": 150,
+      "ors_km": 131.8,
+      "diff_km": 18.2
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "panagyurishte",
+      "cached_km": 275,
+      "ors_km": 314.0,
+      "diff_km": 39.0
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "pernik",
+      "cached_km": 440,
+      "ors_km": 429.1,
+      "diff_km": 10.9
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "petrich",
+      "cached_km": 530,
+      "ors_km": 343.9,
+      "diff_km": 186.1
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "popovo",
+      "cached_km": 270,
+      "ors_km": 211.6,
+      "diff_km": 58.4
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "razgrad",
+      "cached_km": 280,
+      "ors_km": 227.8,
+      "diff_km": 52.2
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "ruse",
+      "cached_km": 350,
+      "ors_km": 291.2,
+      "diff_km": 58.8
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "sandanski",
+      "cached_km": 520,
+      "ors_km": 556.9,
+      "diff_km": 36.9
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "shumen",
+      "cached_km": 220,
+      "ors_km": 150.3,
+      "diff_km": 69.7
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "silistra",
+      "cached_km": 305,
+      "ors_km": 263.3,
+      "diff_km": 41.7
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "sliven",
+      "cached_km": 100,
+      "ors_km": 111.5,
+      "diff_km": 11.5
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "smolyan",
+      "cached_km": 360,
+      "ors_km": 345.4,
+      "diff_km": 14.6
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "sofia",
+      "cached_km": 405,
+      "ors_km": 382.2,
+      "diff_km": 22.8
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "stara zagora",
+      "cached_km": 200,
+      "ors_km": 171.1,
+      "diff_km": 28.9
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "svilengrad",
+      "cached_km": 320,
+      "ors_km": 306.1,
+      "diff_km": 13.9
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "targovishte",
+      "cached_km": 260,
+      "ors_km": 194.5,
+      "diff_km": 65.5
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "troyan",
+      "cached_km": 300,
+      "ors_km": 359.0,
+      "diff_km": 59.0
+    },
+    {
+      "city_a": "burgas",
+      "city_b": "velingrad",
+      "cached_km": 345,
+      "ors_km": 332.0,
+      "diff_km": 13.0
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "dimitrovgrad",
+      "cached_km": 30,
+      "ors_km": 60.4,
+      "diff_km": 30.4
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "dupnitsa",
+      "cached_km": 235,
+      "ors_km": 272.8,
+      "diff_km": 37.8
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "gotse delchev",
+      "cached_km": 260,
+      "ors_km": 239.2,
+      "diff_km": 20.8
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "harmanli",
+      "cached_km": 70,
+      "ors_km": 85.1,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "kardzhali",
+      "cached_km": 90,
+      "ors_km": 109.1,
+      "diff_km": 19.1
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "karlovo",
+      "cached_km": 115,
+      "ors_km": 101.7,
+      "diff_km": 13.3
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "lom",
+      "cached_km": 410,
+      "ors_km": 374.6,
+      "diff_km": 35.4
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "montana",
+      "cached_km": 370,
+      "ors_km": 331.3,
+      "diff_km": 38.7
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "nova zagora",
+      "cached_km": 50,
+      "ors_km": 71.2,
+      "diff_km": 21.2
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "panagyurishte",
+      "cached_km": 145,
+      "ors_km": 122.5,
+      "diff_km": 22.5
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "petrich",
+      "cached_km": 330,
+      "ors_km": 152.4,
+      "diff_km": 177.6
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "pleven",
+      "cached_km": 235,
+      "ors_km": 336.3,
+      "diff_km": 101.3
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "pomorie",
+      "cached_km": 220,
+      "ors_km": 208.8,
+      "diff_km": 11.2
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "razgrad",
+      "cached_km": 295,
+      "ors_km": 261.9,
+      "diff_km": 33.1
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "sandanski",
+      "cached_km": 320,
+      "ors_km": 365.3,
+      "diff_km": 45.3
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "sevlievo",
+      "cached_km": 155,
+      "ors_km": 208.8,
+      "diff_km": 53.8
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "shumen",
+      "cached_km": 295,
+      "ors_km": 253.4,
+      "diff_km": 41.6
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "silistra",
+      "cached_km": 395,
+      "ors_km": 366.3,
+      "diff_km": 28.7
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "sofia",
+      "cached_km": 205,
+      "ors_km": 190.6,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "troyan",
+      "cached_km": 195,
+      "ors_km": 167.4,
+      "diff_km": 27.6
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "varna",
+      "cached_km": 330,
+      "ors_km": 317.4,
+      "diff_km": 12.6
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "veliko tarnovo",
+      "cached_km": 175,
+      "ors_km": 162.3,
+      "diff_km": 12.7
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "vidin",
+      "cached_km": 440,
+      "ors_km": 428.7,
+      "diff_km": 11.3
+    },
+    {
+      "city_a": "chirpan",
+      "city_b": "vratsa",
+      "cached_km": 320,
+      "ors_km": 287.2,
+      "diff_km": 32.8
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "dobrich",
+      "cached_km": 415,
+      "ors_km": 396.5,
+      "diff_km": 18.5
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "dupnitsa",
+      "cached_km": 230,
+      "ors_km": 306.0,
+      "diff_km": 76.0
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "gabrovo",
+      "cached_km": 160,
+      "ors_km": 223.6,
+      "diff_km": 63.6
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 215,
+      "ors_km": 225.7,
+      "diff_km": 10.7
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "gotse delchev",
+      "cached_km": 230,
+      "ors_km": 272.5,
+      "diff_km": 42.5
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "haskovo",
+      "cached_km": 30,
+      "ors_km": 19.5,
+      "diff_km": 10.5
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "karlovo",
+      "cached_km": 110,
+      "ors_km": 135.0,
+      "diff_km": 25.0
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "kazanlak",
+      "cached_km": 105,
+      "ors_km": 83.9,
+      "diff_km": 21.1
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "kyustendil",
+      "cached_km": 290,
+      "ors_km": 327.5,
+      "diff_km": 37.5
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "sevlievo",
+      "cached_km": 185,
+      "ors_km": 257.8,
+      "diff_km": 72.8
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "sliven",
+      "cached_km": 135,
+      "ors_km": 167.0,
+      "diff_km": 32.0
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "sofia",
+      "cached_km": 200,
+      "ors_km": 223.9,
+      "diff_km": 23.9
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "stara zagora",
+      "cached_km": 70,
+      "ors_km": 46.8,
+      "diff_km": 23.2
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "svilengrad",
+      "cached_km": 90,
+      "ors_km": 71.8,
+      "diff_km": 18.2
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "targovishte",
+      "cached_km": 305,
+      "ors_km": 277.6,
+      "diff_km": 27.4
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "troyan",
+      "cached_km": 225,
+      "ors_km": 200.7,
+      "diff_km": 24.3
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "velingrad",
+      "cached_km": 140,
+      "ors_km": 173.7,
+      "diff_km": 33.7
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "vidin",
+      "cached_km": 435,
+      "ors_km": 462.0,
+      "diff_km": 27.0
+    },
+    {
+      "city_a": "dimitrovgrad",
+      "city_b": "yambol",
+      "cached_km": 140,
+      "ors_km": 165.0,
+      "diff_km": 25.0
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "dupnitsa",
+      "cached_km": 532,
+      "ors_km": 635.4,
+      "diff_km": 103.4
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "gabrovo",
+      "cached_km": 255,
+      "ors_km": 281.5,
+      "diff_km": 26.5
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 200,
+      "ors_km": 232.1,
+      "diff_km": 32.1
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "gotse delchev",
+      "cached_km": 625,
+      "ors_km": 601.8,
+      "diff_km": 23.2
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "haskovo",
+      "cached_km": 445,
+      "ors_km": 426.1,
+      "diff_km": 18.9
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "karlovo",
+      "cached_km": 355,
+      "ors_km": 464.3,
+      "diff_km": 109.3
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "kazanlak",
+      "cached_km": 310,
+      "ors_km": 379.3,
+      "diff_km": 69.3
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "kyustendil",
+      "cached_km": 557,
+      "ors_km": 656.9,
+      "diff_km": 99.9
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "lom",
+      "cached_km": 495,
+      "ors_km": 456.6,
+      "diff_km": 38.4
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "nova zagora",
+      "cached_km": 335,
+      "ors_km": 302.9,
+      "diff_km": 32.1
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "panagyurishte",
+      "cached_km": 405,
+      "ors_km": 485.1,
+      "diff_km": 80.1
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "pernik",
+      "cached_km": 502,
+      "ors_km": 600.1,
+      "diff_km": 98.1
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "petrich",
+      "cached_km": 667,
+      "ors_km": 515.0,
+      "diff_km": 152.0
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "pomorie",
+      "cached_km": 205,
+      "ors_km": 162.7,
+      "diff_km": 42.3
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "razgrad",
+      "cached_km": 150,
+      "ors_km": 139.5,
+      "diff_km": 10.5
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "samokov",
+      "cached_km": 527,
+      "ors_km": 540.8,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "sevlievo",
+      "cached_km": 245,
+      "ors_km": 285.6,
+      "diff_km": 40.6
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "silistra",
+      "cached_km": 120,
+      "ors_km": 90.4,
+      "diff_km": 29.6
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "sofia",
+      "cached_km": 467,
+      "ors_km": 553.2,
+      "diff_km": 86.2
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "svilengrad",
+      "cached_km": 505,
+      "ors_km": 477.1,
+      "diff_km": 27.9
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "troyan",
+      "cached_km": 320,
+      "ors_km": 338.0,
+      "diff_km": 18.0
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "veliko tarnovo",
+      "cached_km": 210,
+      "ors_km": 239.8,
+      "diff_km": 29.8
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "vidin",
+      "cached_km": 525,
+      "ors_km": 581.1,
+      "diff_km": 56.1
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "vratsa",
+      "cached_km": 405,
+      "ors_km": 416.8,
+      "diff_km": 11.8
+    },
+    {
+      "city_a": "dobrich",
+      "city_b": "yambol",
+      "cached_km": 275,
+      "ors_km": 263.5,
+      "diff_km": 11.5
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "gorna oryahovitsa",
+      "cached_km": 332,
+      "ors_km": 308.4,
+      "diff_km": 23.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "gotse delchev",
+      "cached_km": 125,
+      "ors_km": 142.4,
+      "diff_km": 17.4
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "harmanli",
+      "cached_km": 270,
+      "ors_km": 330.2,
+      "diff_km": 60.2
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "kardzhali",
+      "cached_km": 290,
+      "ors_km": 354.2,
+      "diff_km": 64.2
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "kyustendil",
+      "cached_km": 120,
+      "ors_km": 43.9,
+      "diff_km": 76.1
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "lom",
+      "cached_km": 270,
+      "ors_km": 214.2,
+      "diff_km": 55.8
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "nova zagora",
+      "cached_km": 285,
+      "ors_km": 339.1,
+      "diff_km": 54.1
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "panagyurishte",
+      "cached_km": 190,
+      "ors_km": 218.7,
+      "diff_km": 28.7
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "pomorie",
+      "cached_km": 455,
+      "ors_km": 476.8,
+      "diff_km": 21.8
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "popovo",
+      "cached_km": 392,
+      "ors_km": 380.4,
+      "diff_km": 11.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "razgrad",
+      "cached_km": 442,
+      "ors_km": 529.8,
+      "diff_km": 87.8
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "ruse",
+      "cached_km": 397,
+      "ors_km": 381.9,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "samokov",
+      "cached_km": 60,
+      "ors_km": 40.4,
+      "diff_km": 19.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "sandanski",
+      "cached_km": 115,
+      "ors_km": 101.3,
+      "diff_km": 13.7
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "sevlievo",
+      "cached_km": 302,
+      "ors_km": 248.6,
+      "diff_km": 53.4
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "shumen",
+      "cached_km": 442,
+      "ors_km": 521.3,
+      "diff_km": 79.3
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "silistra",
+      "cached_km": 517,
+      "ors_km": 501.9,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "sliven",
+      "cached_km": 340,
+      "ors_km": 385.9,
+      "diff_km": 45.9
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "smolyan",
+      "cached_km": 225,
+      "ors_km": 325.6,
+      "diff_km": 100.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "stara zagora",
+      "cached_km": 275,
+      "ors_km": 311.6,
+      "diff_km": 36.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "svilengrad",
+      "cached_km": 320,
+      "ors_km": 359.6,
+      "diff_km": 39.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "targovishte",
+      "cached_km": 422,
+      "ors_km": 496.5,
+      "diff_km": 74.5
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "troyan",
+      "cached_km": 242,
+      "ors_km": 226.9,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "varna",
+      "cached_km": 532,
+      "ors_km": 585.4,
+      "diff_km": 53.4
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "veliko tarnovo",
+      "cached_km": 322,
+      "ors_km": 292.8,
+      "diff_km": 29.2
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "vidin",
+      "cached_km": 300,
+      "ors_km": 268.4,
+      "diff_km": 31.6
+    },
+    {
+      "city_a": "dupnitsa",
+      "city_b": "yambol",
+      "cached_km": 345,
+      "ors_km": 384.0,
+      "diff_km": 39.0
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "harmanli",
+      "cached_km": 200,
+      "ors_km": 256.6,
+      "diff_km": 56.6
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "kardzhali",
+      "cached_km": 220,
+      "ors_km": 280.6,
+      "diff_km": 60.6
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "panagyurishte",
+      "cached_km": 150,
+      "ors_km": 210.2,
+      "diff_km": 60.2
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "pazardzhik",
+      "cached_km": 200,
+      "ors_km": 269.1,
+      "diff_km": 69.1
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "petrich",
+      "cached_km": 412,
+      "ors_km": 200.4,
+      "diff_km": 211.6
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "plovdiv",
+      "cached_km": 160,
+      "ors_km": 232.5,
+      "diff_km": 72.5
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "razgrad",
+      "cached_km": 165,
+      "ors_km": 151.2,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "sandanski",
+      "cached_km": 387,
+      "ors_km": 373.2,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "shumen",
+      "cached_km": 165,
+      "ors_km": 193.2,
+      "diff_km": 28.2
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "sliven",
+      "cached_km": 135,
+      "ors_km": 121.9,
+      "diff_km": 13.1
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "smolyan",
+      "cached_km": 270,
+      "ors_km": 325.3,
+      "diff_km": 55.3
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "stara zagora",
+      "cached_km": 90,
+      "ors_km": 121.7,
+      "diff_km": 31.7
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "svilengrad",
+      "cached_km": 250,
+      "ors_km": 205.3,
+      "diff_km": 44.7
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "varna",
+      "cached_km": 255,
+      "ors_km": 273.1,
+      "diff_km": 18.1
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "velingrad",
+      "cached_km": 250,
+      "ors_km": 311.9,
+      "diff_km": 61.9
+    },
+    {
+      "city_a": "gabrovo",
+      "city_b": "vidin",
+      "cached_km": 325,
+      "ors_km": 342.6,
+      "diff_km": 17.6
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "karlovo",
+      "cached_km": 155,
+      "ors_km": 165.4,
+      "diff_km": 10.4
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "lovech",
+      "cached_km": 125,
+      "ors_km": 106.6,
+      "diff_km": 18.4
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "montana",
+      "cached_km": 255,
+      "ors_km": 274.7,
+      "diff_km": 19.7
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "nova zagora",
+      "cached_km": 195,
+      "ors_km": 105.1,
+      "diff_km": 89.9
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "panagyurishte",
+      "cached_km": 205,
+      "ors_km": 294.2,
+      "diff_km": 89.2
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "pazardzhik",
+      "cached_km": 255,
+      "ors_km": 269.3,
+      "diff_km": 14.3
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "pernik",
+      "cached_km": 302,
+      "ors_km": 275.0,
+      "diff_km": 27.0
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "petrich",
+      "cached_km": 467,
+      "ors_km": 230.0,
+      "diff_km": 237.0
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "pleven",
+      "cached_km": 105,
+      "ors_km": 120.9,
+      "diff_km": 15.9
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "plovdiv",
+      "cached_km": 215,
+      "ors_km": 232.8,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "pomorie",
+      "cached_km": 310,
+      "ors_km": 236.7,
+      "diff_km": 73.3
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "samokov",
+      "cached_km": 327,
+      "ors_km": 349.9,
+      "diff_km": 22.9
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "sandanski",
+      "cached_km": 442,
+      "ors_km": 402.8,
+      "diff_km": 39.2
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "sevlievo",
+      "cached_km": 45,
+      "ors_km": 61.9,
+      "diff_km": 16.9
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "shumen",
+      "cached_km": 110,
+      "ors_km": 143.0,
+      "diff_km": 33.0
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "silistra",
+      "cached_km": 210,
+      "ors_km": 220.7,
+      "diff_km": 10.7
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "sliven",
+      "cached_km": 190,
+      "ors_km": 111.6,
+      "diff_km": 78.4
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "sofia",
+      "cached_km": 267,
+      "ors_km": 234.5,
+      "diff_km": 32.5
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "stara zagora",
+      "cached_km": 145,
+      "ors_km": 121.9,
+      "diff_km": 23.1
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "svilengrad",
+      "cached_km": 305,
+      "ors_km": 205.5,
+      "diff_km": 99.5
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "targovishte",
+      "cached_km": 90,
+      "ors_km": 102.8,
+      "diff_km": 12.8
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "varna",
+      "cached_km": 200,
+      "ors_km": 222.9,
+      "diff_km": 22.9
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "vidin",
+      "cached_km": 325,
+      "ors_km": 372.2,
+      "diff_km": 47.2
+    },
+    {
+      "city_a": "gorna oryahovitsa",
+      "city_b": "vratsa",
+      "cached_km": 205,
+      "ors_km": 230.6,
+      "diff_km": 25.6
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "harmanli",
+      "cached_km": 260,
+      "ors_km": 298.4,
+      "diff_km": 38.4
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "karlovo",
+      "cached_km": 270,
+      "ors_km": 238.1,
+      "diff_km": 31.9
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "kyustendil",
+      "cached_km": 245,
+      "ors_km": 173.5,
+      "diff_km": 71.5
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "lom",
+      "cached_km": 390,
+      "ors_km": 348.0,
+      "diff_km": 42.0
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "lovech",
+      "cached_km": 327,
+      "ors_km": 362.8,
+      "diff_km": 35.8
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "montana",
+      "cached_km": 350,
+      "ors_km": 299.5,
+      "diff_km": 50.5
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "panagyurishte",
+      "cached_km": 300,
+      "ors_km": 186.8,
+      "diff_km": 113.2
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "pazardzhik",
+      "cached_km": 250,
+      "ors_km": 142.7,
+      "diff_km": 107.3
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "petrich",
+      "cached_km": 70,
+      "ors_km": 288.9,
+      "diff_km": 218.9
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "pleven",
+      "cached_km": 357,
+      "ors_km": 369.0,
+      "diff_km": 12.0
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "plovdiv",
+      "cached_km": 210,
+      "ors_km": 166.2,
+      "diff_km": 43.8
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "pomorie",
+      "cached_km": 480,
+      "ors_km": 445.0,
+      "diff_km": 35.0
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "razgrad",
+      "cached_km": 535,
+      "ors_km": 498.0,
+      "diff_km": 37.0
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "sandanski",
+      "cached_km": 60,
+      "ors_km": 77.8,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "sevlievo",
+      "cached_km": 395,
+      "ors_km": 382.4,
+      "diff_km": 12.6
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "shumen",
+      "cached_km": 535,
+      "ors_km": 489.5,
+      "diff_km": 45.5
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "silistra",
+      "cached_km": 635,
+      "ors_km": 602.5,
+      "diff_km": 32.5
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "sliven",
+      "cached_km": 365,
+      "ors_km": 354.1,
+      "diff_km": 10.9
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "smolyan",
+      "cached_km": 100,
+      "ors_km": 131.2,
+      "diff_km": 31.2
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "svilengrad",
+      "cached_km": 310,
+      "ors_km": 327.8,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "varna",
+      "cached_km": 590,
+      "ors_km": 553.6,
+      "diff_km": 36.4
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "veliko tarnovo",
+      "cached_km": 415,
+      "ors_km": 426.6,
+      "diff_km": 11.6
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "vidin",
+      "cached_km": 420,
+      "ors_km": 402.2,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "gotse delchev",
+      "city_b": "vratsa",
+      "cached_km": 300,
+      "ors_km": 319.9,
+      "diff_km": 19.9
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "karlovo",
+      "cached_km": 150,
+      "ors_km": 161.7,
+      "diff_km": 11.7
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "kazanlak",
+      "cached_km": 145,
+      "ors_km": 156.5,
+      "diff_km": 11.5
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "kyustendil",
+      "cached_km": 330,
+      "ors_km": 354.2,
+      "diff_km": 24.2
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "lom",
+      "cached_km": 445,
+      "ors_km": 434.5,
+      "diff_km": 10.5
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "montana",
+      "cached_km": 405,
+      "ors_km": 391.2,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "nova zagora",
+      "cached_km": 120,
+      "ors_km": 146.9,
+      "diff_km": 26.9
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "pazardzhik",
+      "cached_km": 130,
+      "ors_km": 157.5,
+      "diff_km": 27.5
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "pernik",
+      "cached_km": 275,
+      "ors_km": 297.5,
+      "diff_km": 22.5
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "petrich",
+      "cached_km": 330,
+      "ors_km": 212.4,
+      "diff_km": 117.6
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "pleven",
+      "cached_km": 305,
+      "ors_km": 396.3,
+      "diff_km": 91.3
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "plovdiv",
+      "cached_km": 90,
+      "ors_km": 121.0,
+      "diff_km": 31.0
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "razgrad",
+      "cached_km": 365,
+      "ors_km": 337.6,
+      "diff_km": 27.4
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "samokov",
+      "cached_km": 210,
+      "ors_km": 238.1,
+      "diff_km": 28.1
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "sandanski",
+      "cached_km": 320,
+      "ors_km": 425.3,
+      "diff_km": 105.3
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "sevlievo",
+      "cached_km": 225,
+      "ors_km": 284.5,
+      "diff_km": 59.5
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "shumen",
+      "cached_km": 365,
+      "ors_km": 329.1,
+      "diff_km": 35.9
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "silistra",
+      "cached_km": 465,
+      "ors_km": 442.0,
+      "diff_km": 23.0
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "sliven",
+      "cached_km": 175,
+      "ors_km": 193.7,
+      "diff_km": 18.7
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "smolyan",
+      "cached_km": 160,
+      "ors_km": 213.8,
+      "diff_km": 53.8
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "sofia",
+      "cached_km": 240,
+      "ors_km": 250.6,
+      "diff_km": 10.6
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "targovishte",
+      "cached_km": 345,
+      "ors_km": 304.3,
+      "diff_km": 40.7
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "troyan",
+      "cached_km": 265,
+      "ors_km": 227.4,
+      "diff_km": 37.6
+    },
+    {
+      "city_a": "harmanli",
+      "city_b": "vidin",
+      "cached_km": 475,
+      "ors_km": 488.7,
+      "diff_km": 13.7
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "kyustendil",
+      "cached_km": 320,
+      "ors_km": 336.2,
+      "diff_km": 16.2
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "lom",
+      "cached_km": 435,
+      "ors_km": 416.6,
+      "diff_km": 18.4
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "lovech",
+      "cached_km": 260,
+      "ors_km": 242.8,
+      "diff_km": 17.2
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "montana",
+      "cached_km": 395,
+      "ors_km": 373.3,
+      "diff_km": 21.7
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "nova zagora",
+      "cached_km": 110,
+      "ors_km": 128.9,
+      "diff_km": 18.9
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "pazardzhik",
+      "cached_km": 120,
+      "ors_km": 139.5,
+      "diff_km": 19.5
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "pernik",
+      "cached_km": 265,
+      "ors_km": 279.5,
+      "diff_km": 14.5
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "petrich",
+      "cached_km": 290,
+      "ors_km": 194.4,
+      "diff_km": 95.6
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "pleven",
+      "cached_km": 295,
+      "ors_km": 378.3,
+      "diff_km": 83.3
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "plovdiv",
+      "cached_km": 80,
+      "ors_km": 103.0,
+      "diff_km": 23.0
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "pomorie",
+      "cached_km": 280,
+      "ors_km": 266.5,
+      "diff_km": 13.5
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "razgrad",
+      "cached_km": 355,
+      "ors_km": 319.6,
+      "diff_km": 35.4
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "ruse",
+      "cached_km": 335,
+      "ors_km": 323.5,
+      "diff_km": 11.5
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "samokov",
+      "cached_km": 200,
+      "ors_km": 220.1,
+      "diff_km": 20.1
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "sandanski",
+      "cached_km": 280,
+      "ors_km": 407.3,
+      "diff_km": 127.3
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "sevlievo",
+      "cached_km": 215,
+      "ors_km": 266.5,
+      "diff_km": 51.5
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "shumen",
+      "cached_km": 355,
+      "ors_km": 311.1,
+      "diff_km": 43.9
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "silistra",
+      "cached_km": 455,
+      "ors_km": 424.1,
+      "diff_km": 30.9
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "sliven",
+      "cached_km": 165,
+      "ors_km": 175.7,
+      "diff_km": 10.7
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "smolyan",
+      "cached_km": 120,
+      "ors_km": 135.9,
+      "diff_km": 15.9
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "svilengrad",
+      "cached_km": 90,
+      "ors_km": 75.6,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "targovishte",
+      "cached_km": 335,
+      "ors_km": 286.3,
+      "diff_km": 48.7
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "veliko tarnovo",
+      "cached_km": 235,
+      "ors_km": 220.1,
+      "diff_km": 14.9
+    },
+    {
+      "city_a": "haskovo",
+      "city_b": "velingrad",
+      "cached_km": 170,
+      "ors_km": 182.4,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "kazanlak",
+      "cached_km": 165,
+      "ors_km": 183.6,
+      "diff_km": 18.6
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "lom",
+      "cached_km": 465,
+      "ors_km": 426.5,
+      "diff_km": 38.5
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "lovech",
+      "cached_km": 290,
+      "ors_km": 252.5,
+      "diff_km": 37.5
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "montana",
+      "cached_km": 425,
+      "ors_km": 383.2,
+      "diff_km": 41.8
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "nova zagora",
+      "cached_km": 140,
+      "ors_km": 174.0,
+      "diff_km": 34.0
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "panagyurishte",
+      "cached_km": 200,
+      "ors_km": 174.4,
+      "diff_km": 25.6
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "petrich",
+      "cached_km": 240,
+      "ors_km": 204.3,
+      "diff_km": 35.7
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "pleven",
+      "cached_km": 325,
+      "ors_km": 388.2,
+      "diff_km": 63.2
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "plovdiv",
+      "cached_km": 110,
+      "ors_km": 95.8,
+      "diff_km": 14.2
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "popovo",
+      "cached_km": 335,
+      "ors_km": 348.5,
+      "diff_km": 13.5
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "razgrad",
+      "cached_km": 385,
+      "ors_km": 364.7,
+      "diff_km": 20.3
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "sandanski",
+      "cached_km": 230,
+      "ors_km": 417.2,
+      "diff_km": 187.2
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "sevlievo",
+      "cached_km": 245,
+      "ors_km": 311.6,
+      "diff_km": 66.6
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "shumen",
+      "cached_km": 385,
+      "ors_km": 356.2,
+      "diff_km": 28.8
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "silistra",
+      "cached_km": 485,
+      "ors_km": 469.1,
+      "diff_km": 15.9
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "sliven",
+      "cached_km": 195,
+      "ors_km": 220.8,
+      "diff_km": 25.8
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "smolyan",
+      "cached_km": 70,
+      "ors_km": 88.2,
+      "diff_km": 18.2
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "sofia",
+      "cached_km": 260,
+      "ors_km": 242.5,
+      "diff_km": 17.5
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "stara zagora",
+      "cached_km": 130,
+      "ors_km": 146.4,
+      "diff_km": 16.4
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "svilengrad",
+      "cached_km": 140,
+      "ors_km": 120.7,
+      "diff_km": 19.3
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "targovishte",
+      "cached_km": 365,
+      "ors_km": 331.4,
+      "diff_km": 33.6
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "troyan",
+      "cached_km": 285,
+      "ors_km": 219.1,
+      "diff_km": 65.9
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "velingrad",
+      "cached_km": 180,
+      "ors_km": 192.4,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "kardzhali",
+      "city_b": "yambol",
+      "cached_km": 200,
+      "ors_km": 218.8,
+      "diff_km": 18.8
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "kazanlak",
+      "cached_km": 45,
+      "ors_km": 56.7,
+      "diff_km": 11.7
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "kyustendil",
+      "cached_km": 300,
+      "ors_km": 245.6,
+      "diff_km": 54.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "lom",
+      "cached_km": 395,
+      "ors_km": 254.8,
+      "diff_km": 140.2
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "lovech",
+      "cached_km": 170,
+      "ors_km": 100.5,
+      "diff_km": 69.5
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "montana",
+      "cached_km": 355,
+      "ors_km": 211.5,
+      "diff_km": 143.5
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "nova zagora",
+      "cached_km": 130,
+      "ors_km": 171.2,
+      "diff_km": 41.2
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "panagyurishte",
+      "cached_km": 50,
+      "ors_km": 99.2,
+      "diff_km": 49.2
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "pernik",
+      "cached_km": 245,
+      "ors_km": 188.8,
+      "diff_km": 56.2
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "petrich",
+      "cached_km": 340,
+      "ors_km": 86.6,
+      "diff_km": 253.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "pleven",
+      "cached_km": 205,
+      "ors_km": 134.9,
+      "diff_km": 70.1
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "pomorie",
+      "cached_km": 245,
+      "ors_km": 308.9,
+      "diff_km": 63.9
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "razgrad",
+      "cached_km": 265,
+      "ors_km": 361.9,
+      "diff_km": 96.9
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "ruse",
+      "cached_km": 245,
+      "ors_km": 256.6,
+      "diff_km": 11.6
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "sandanski",
+      "cached_km": 330,
+      "ors_km": 316.6,
+      "diff_km": 13.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "shumen",
+      "cached_km": 265,
+      "ors_km": 353.4,
+      "diff_km": 88.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "silistra",
+      "cached_km": 365,
+      "ors_km": 376.6,
+      "diff_km": 11.6
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "sliven",
+      "cached_km": 125,
+      "ors_km": 138.4,
+      "diff_km": 13.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "smolyan",
+      "cached_km": 170,
+      "ors_km": 157.4,
+      "diff_km": 12.6
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "sofia",
+      "cached_km": 210,
+      "ors_km": 189.8,
+      "diff_km": 20.2
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "stara zagora",
+      "cached_km": 80,
+      "ors_km": 92.3,
+      "diff_km": 12.3
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "troyan",
+      "cached_km": 165,
+      "ors_km": 67.1,
+      "diff_km": 97.9
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "varna",
+      "cached_km": 355,
+      "ors_km": 417.5,
+      "diff_km": 62.5
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "velingrad",
+      "cached_km": 150,
+      "ors_km": 139.6,
+      "diff_km": 10.4
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "vidin",
+      "cached_km": 425,
+      "ors_km": 309.0,
+      "diff_km": 116.0
+    },
+    {
+      "city_a": "karlovo",
+      "city_b": "yambol",
+      "cached_km": 155,
+      "ors_km": 216.1,
+      "diff_km": 61.1
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "lom",
+      "cached_km": 350,
+      "ors_km": 308.7,
+      "diff_km": 41.3
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "montana",
+      "cached_km": 310,
+      "ors_km": 265.4,
+      "diff_km": 44.6
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "nova zagora",
+      "cached_km": 85,
+      "ors_km": 67.4,
+      "diff_km": 17.6
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "panagyurishte",
+      "cached_km": 95,
+      "ors_km": 200.6,
+      "diff_km": 105.6
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "petrich",
+      "cached_km": 385,
+      "ors_km": 140.4,
+      "diff_km": 244.6
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "pleven",
+      "cached_km": 160,
+      "ors_km": 188.7,
+      "diff_km": 28.7
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "plovdiv",
+      "cached_km": 105,
+      "ors_km": 139.1,
+      "diff_km": 34.1
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "pomorie",
+      "cached_km": 200,
+      "ors_km": 224.3,
+      "diff_km": 24.3
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "razgrad",
+      "cached_km": 220,
+      "ors_km": 277.3,
+      "diff_km": 57.3
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "samokov",
+      "cached_km": 225,
+      "ors_km": 256.2,
+      "diff_km": 31.2
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "sandanski",
+      "cached_km": 375,
+      "ors_km": 443.4,
+      "diff_km": 68.4
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "sevlievo",
+      "cached_km": 80,
+      "ors_km": 145.7,
+      "diff_km": 65.7
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "shumen",
+      "cached_km": 220,
+      "ors_km": 268.8,
+      "diff_km": 48.8
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "smolyan",
+      "cached_km": 215,
+      "ors_km": 231.9,
+      "diff_km": 16.9
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "sofia",
+      "cached_km": 255,
+      "ors_km": 268.7,
+      "diff_km": 13.7
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "targovishte",
+      "cached_km": 200,
+      "ors_km": 244.0,
+      "diff_km": 44.0
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "varna",
+      "cached_km": 310,
+      "ors_km": 332.9,
+      "diff_km": 22.9
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "velingrad",
+      "cached_km": 195,
+      "ors_km": 218.5,
+      "diff_km": 23.5
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "vidin",
+      "cached_km": 380,
+      "ors_km": 362.8,
+      "diff_km": 17.2
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "vratsa",
+      "cached_km": 260,
+      "ors_km": 221.3,
+      "diff_km": 38.7
+    },
+    {
+      "city_a": "kazanlak",
+      "city_b": "yambol",
+      "cached_km": 110,
+      "ors_km": 131.5,
+      "diff_km": 21.5
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "lom",
+      "cached_km": 295,
+      "ors_km": 235.8,
+      "diff_km": 59.2
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "lovech",
+      "cached_km": 232,
+      "ors_km": 250.6,
+      "diff_km": 18.6
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "montana",
+      "cached_km": 255,
+      "ors_km": 187.3,
+      "diff_km": 67.7
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "nova zagora",
+      "cached_km": 345,
+      "ors_km": 360.7,
+      "diff_km": 15.7
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "panagyurishte",
+      "cached_km": 252,
+      "ors_km": 240.3,
+      "diff_km": 11.7
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "pazardzhik",
+      "cached_km": 202,
+      "ors_km": 214.3,
+      "diff_km": 12.3
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "pernik",
+      "cached_km": 70,
+      "ors_km": 57.4,
+      "diff_km": 12.6
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "petrich",
+      "cached_km": 260,
+      "ors_km": 176.7,
+      "diff_km": 83.3
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "pomorie",
+      "cached_km": 515,
+      "ors_km": 498.4,
+      "diff_km": 16.6
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "popovo",
+      "cached_km": 417,
+      "ors_km": 401.9,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "razgrad",
+      "cached_km": 467,
+      "ors_km": 551.4,
+      "diff_km": 84.4
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "ruse",
+      "cached_km": 422,
+      "ors_km": 403.5,
+      "diff_km": 18.5
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "samokov",
+      "cached_km": 150,
+      "ors_km": 83.1,
+      "diff_km": 66.9
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "sandanski",
+      "cached_km": 235,
+      "ors_km": 131.6,
+      "diff_km": 103.4
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "sevlievo",
+      "cached_km": 327,
+      "ors_km": 270.2,
+      "diff_km": 56.8
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "shumen",
+      "cached_km": 467,
+      "ors_km": 542.9,
+      "diff_km": 75.9
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "silistra",
+      "cached_km": 542,
+      "ors_km": 523.5,
+      "diff_km": 18.5
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "targovishte",
+      "cached_km": 447,
+      "ors_km": 518.1,
+      "diff_km": 71.1
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "troyan",
+      "cached_km": 267,
+      "ors_km": 248.5,
+      "diff_km": 18.5
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "varna",
+      "cached_km": 557,
+      "ors_km": 607.0,
+      "diff_km": 50.0
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "veliko tarnovo",
+      "cached_km": 347,
+      "ors_km": 314.4,
+      "diff_km": 32.6
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "velingrad",
+      "cached_km": 250,
+      "ors_km": 190.7,
+      "diff_km": 59.3
+    },
+    {
+      "city_a": "kyustendil",
+      "city_b": "vidin",
+      "cached_km": 325,
+      "ors_km": 290.0,
+      "diff_km": 35.0
+    },
+    {
+      "city_a": "lom",
+      "city_b": "lovech",
+      "cached_km": 225,
+      "ors_km": 182.0,
+      "diff_km": 43.0
+    },
+    {
+      "city_a": "lom",
+      "city_b": "nova zagora",
+      "cached_km": 435,
+      "ors_km": 445.6,
+      "diff_km": 10.6
+    },
+    {
+      "city_a": "lom",
+      "city_b": "panagyurishte",
+      "cached_km": 367,
+      "ors_km": 230.6,
+      "diff_km": 136.4
+    },
+    {
+      "city_a": "lom",
+      "city_b": "pazardzhik",
+      "cached_km": 317,
+      "ors_km": 299.2,
+      "diff_km": 17.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "pernik",
+      "cached_km": 240,
+      "ors_km": 178.6,
+      "diff_km": 61.4
+    },
+    {
+      "city_a": "lom",
+      "city_b": "petrich",
+      "cached_km": 405,
+      "ors_km": 196.7,
+      "diff_km": 208.3
+    },
+    {
+      "city_a": "lom",
+      "city_b": "pleven",
+      "cached_km": 190,
+      "ors_km": 147.6,
+      "diff_km": 42.4
+    },
+    {
+      "city_a": "lom",
+      "city_b": "plovdiv",
+      "cached_km": 355,
+      "ors_km": 334.1,
+      "diff_km": 20.9
+    },
+    {
+      "city_a": "lom",
+      "city_b": "pomorie",
+      "cached_km": 550,
+      "ors_km": 583.3,
+      "diff_km": 33.3
+    },
+    {
+      "city_a": "lom",
+      "city_b": "razgrad",
+      "cached_km": 405,
+      "ors_km": 326.2,
+      "diff_km": 78.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "ruse",
+      "cached_km": 350,
+      "ors_km": 307.2,
+      "diff_km": 42.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "samokov",
+      "cached_km": 265,
+      "ors_km": 248.2,
+      "diff_km": 16.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "sandanski",
+      "cached_km": 380,
+      "ors_km": 306.4,
+      "diff_km": 73.6
+    },
+    {
+      "city_a": "lom",
+      "city_b": "sevlievo",
+      "cached_km": 320,
+      "ors_km": 260.1,
+      "diff_km": 59.9
+    },
+    {
+      "city_a": "lom",
+      "city_b": "shumen",
+      "cached_km": 405,
+      "ors_km": 368.2,
+      "diff_km": 36.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "silistra",
+      "cached_km": 470,
+      "ors_km": 544.1,
+      "diff_km": 74.1
+    },
+    {
+      "city_a": "lom",
+      "city_b": "sliven",
+      "cached_km": 430,
+      "ors_km": 492.4,
+      "diff_km": 62.4
+    },
+    {
+      "city_a": "lom",
+      "city_b": "smolyan",
+      "cached_km": 465,
+      "ors_km": 432.1,
+      "diff_km": 32.9
+    },
+    {
+      "city_a": "lom",
+      "city_b": "sofia",
+      "cached_km": 205,
+      "ors_km": 164.5,
+      "diff_km": 40.5
+    },
+    {
+      "city_a": "lom",
+      "city_b": "stara zagora",
+      "cached_km": 385,
+      "ors_km": 418.1,
+      "diff_km": 33.1
+    },
+    {
+      "city_a": "lom",
+      "city_b": "svilengrad",
+      "cached_km": 495,
+      "ors_km": 466.2,
+      "diff_km": 28.8
+    },
+    {
+      "city_a": "lom",
+      "city_b": "targovishte",
+      "cached_km": 385,
+      "ors_km": 328.0,
+      "diff_km": 57.0
+    },
+    {
+      "city_a": "lom",
+      "city_b": "troyan",
+      "cached_km": 260,
+      "ors_km": 238.3,
+      "diff_km": 21.7
+    },
+    {
+      "city_a": "lom",
+      "city_b": "varna",
+      "cached_km": 495,
+      "ors_km": 448.1,
+      "diff_km": 46.9
+    },
+    {
+      "city_a": "lom",
+      "city_b": "veliko tarnovo",
+      "cached_km": 285,
+      "ors_km": 304.3,
+      "diff_km": 19.3
+    },
+    {
+      "city_a": "lom",
+      "city_b": "velingrad",
+      "cached_km": 365,
+      "ors_km": 342.1,
+      "diff_km": 22.9
+    },
+    {
+      "city_a": "lom",
+      "city_b": "vidin",
+      "cached_km": 90,
+      "ors_km": 57.6,
+      "diff_km": 32.4
+    },
+    {
+      "city_a": "lom",
+      "city_b": "yambol",
+      "cached_km": 460,
+      "ors_km": 490.5,
+      "diff_km": 30.5
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "montana",
+      "cached_km": 185,
+      "ors_km": 195.7,
+      "diff_km": 10.7
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "nova zagora",
+      "cached_km": 210,
+      "ors_km": 183.1,
+      "diff_km": 26.9
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "panagyurishte",
+      "cached_km": 220,
+      "ors_km": 160.7,
+      "diff_km": 59.3
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "pernik",
+      "cached_km": 177,
+      "ors_km": 196.0,
+      "diff_km": 19.0
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "petrich",
+      "cached_km": 342,
+      "ors_km": 151.0,
+      "diff_km": 191.0
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "plovdiv",
+      "cached_km": 230,
+      "ors_km": 158.9,
+      "diff_km": 71.1
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "ruse",
+      "cached_km": 195,
+      "ors_km": 154.6,
+      "diff_km": 40.4
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "sevlievo",
+      "cached_km": 95,
+      "ors_km": 47.2,
+      "diff_km": 47.8
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "silistra",
+      "cached_km": 315,
+      "ors_km": 274.6,
+      "diff_km": 40.4
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "smolyan",
+      "cached_km": 340,
+      "ors_km": 256.9,
+      "diff_km": 83.1
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "sofia",
+      "cached_km": 142,
+      "ors_km": 155.5,
+      "diff_km": 13.5
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "stara zagora",
+      "cached_km": 160,
+      "ors_km": 192.0,
+      "diff_km": 32.0
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "svilengrad",
+      "cached_km": 320,
+      "ors_km": 291.2,
+      "diff_km": 28.8
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "targovishte",
+      "cached_km": 215,
+      "ors_km": 189.9,
+      "diff_km": 25.1
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "varna",
+      "cached_km": 325,
+      "ors_km": 310.0,
+      "diff_km": 15.0
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "veliko tarnovo",
+      "cached_km": 115,
+      "ors_km": 91.3,
+      "diff_km": 23.7
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "vidin",
+      "cached_km": 255,
+      "ors_km": 293.2,
+      "diff_km": 38.2
+    },
+    {
+      "city_a": "lovech",
+      "city_b": "vratsa",
+      "cached_km": 135,
+      "ors_km": 151.6,
+      "diff_km": 16.6
+    },
+    {
+      "city_a": "montana",
+      "city_b": "nova zagora",
+      "cached_km": 395,
+      "ors_km": 369.5,
+      "diff_km": 25.5
+    },
+    {
+      "city_a": "montana",
+      "city_b": "panagyurishte",
+      "cached_km": 327,
+      "ors_km": 182.2,
+      "diff_km": 144.8
+    },
+    {
+      "city_a": "montana",
+      "city_b": "pazardzhik",
+      "cached_km": 277,
+      "ors_km": 223.1,
+      "diff_km": 53.9
+    },
+    {
+      "city_a": "montana",
+      "city_b": "pernik",
+      "cached_km": 200,
+      "ors_km": 130.0,
+      "diff_km": 70.0
+    },
+    {
+      "city_a": "montana",
+      "city_b": "petrich",
+      "cached_km": 365,
+      "ors_km": 148.3,
+      "diff_km": 216.7
+    },
+    {
+      "city_a": "montana",
+      "city_b": "pleven",
+      "cached_km": 150,
+      "ors_km": 127.7,
+      "diff_km": 22.3
+    },
+    {
+      "city_a": "montana",
+      "city_b": "plovdiv",
+      "cached_km": 315,
+      "ors_km": 257.9,
+      "diff_km": 57.1
+    },
+    {
+      "city_a": "montana",
+      "city_b": "popovo",
+      "cached_km": 315,
+      "ors_km": 271.3,
+      "diff_km": 43.7
+    },
+    {
+      "city_a": "montana",
+      "city_b": "razgrad",
+      "cached_km": 365,
+      "ors_km": 306.3,
+      "diff_km": 58.7
+    },
+    {
+      "city_a": "montana",
+      "city_b": "ruse",
+      "cached_km": 310,
+      "ors_km": 272.9,
+      "diff_km": 37.1
+    },
+    {
+      "city_a": "montana",
+      "city_b": "samokov",
+      "cached_km": 225,
+      "ors_km": 199.6,
+      "diff_km": 25.4
+    },
+    {
+      "city_a": "montana",
+      "city_b": "sandanski",
+      "cached_km": 340,
+      "ors_km": 257.8,
+      "diff_km": 82.2
+    },
+    {
+      "city_a": "montana",
+      "city_b": "sevlievo",
+      "cached_km": 280,
+      "ors_km": 211.6,
+      "diff_km": 68.4
+    },
+    {
+      "city_a": "montana",
+      "city_b": "shumen",
+      "cached_km": 365,
+      "ors_km": 348.4,
+      "diff_km": 16.6
+    },
+    {
+      "city_a": "montana",
+      "city_b": "troyan",
+      "cached_km": 220,
+      "ors_km": 189.9,
+      "diff_km": 30.1
+    },
+    {
+      "city_a": "montana",
+      "city_b": "varna",
+      "cached_km": 455,
+      "ors_km": 428.2,
+      "diff_km": 26.8
+    },
+    {
+      "city_a": "montana",
+      "city_b": "veliko tarnovo",
+      "cached_km": 245,
+      "ors_km": 255.8,
+      "diff_km": 10.8
+    },
+    {
+      "city_a": "montana",
+      "city_b": "velingrad",
+      "cached_km": 325,
+      "ors_km": 265.9,
+      "diff_km": 59.1
+    },
+    {
+      "city_a": "montana",
+      "city_b": "vidin",
+      "cached_km": 70,
+      "ors_km": 104.1,
+      "diff_km": 34.1
+    },
+    {
+      "city_a": "montana",
+      "city_b": "vratsa",
+      "cached_km": 50,
+      "ors_km": 39.9,
+      "diff_km": 10.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "panagyurishte",
+      "cached_km": 180,
+      "ors_km": 191.1,
+      "diff_km": 11.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "pazardzhik",
+      "cached_km": 145,
+      "ors_km": 166.1,
+      "diff_km": 21.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "pernik",
+      "cached_km": 290,
+      "ors_km": 306.1,
+      "diff_km": 16.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "petrich",
+      "cached_km": 380,
+      "ors_km": 221.0,
+      "diff_km": 159.0
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "pleven",
+      "cached_km": 245,
+      "ors_km": 218.1,
+      "diff_km": 26.9
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "plovdiv",
+      "cached_km": 105,
+      "ors_km": 129.6,
+      "diff_km": 24.6
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "pomorie",
+      "cached_km": 170,
+      "ors_km": 150.9,
+      "diff_km": 19.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "popovo",
+      "cached_km": 255,
+      "ors_km": 187.8,
+      "diff_km": 67.2
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "razgrad",
+      "cached_km": 305,
+      "ors_km": 204.0,
+      "diff_km": 101.0
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "ruse",
+      "cached_km": 285,
+      "ors_km": 195.9,
+      "diff_km": 89.1
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "samokov",
+      "cached_km": 225,
+      "ors_km": 246.8,
+      "diff_km": 21.8
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "shumen",
+      "cached_km": 305,
+      "ors_km": 195.5,
+      "diff_km": 109.5
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "svilengrad",
+      "cached_km": 170,
+      "ors_km": 102.4,
+      "diff_km": 67.6
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "troyan",
+      "cached_km": 205,
+      "ors_km": 236.0,
+      "diff_km": 31.0
+    },
+    {
+      "city_a": "nova zagora",
+      "city_b": "velingrad",
+      "cached_km": 195,
+      "ors_km": 209.0,
+      "diff_km": 14.0
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "pernik",
+      "cached_km": 197,
+      "ors_km": 184.9,
+      "diff_km": 12.1
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "petrich",
+      "cached_km": 330,
+      "ors_km": 31.5,
+      "diff_km": 298.5
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "pleven",
+      "cached_km": 255,
+      "ors_km": 167.8,
+      "diff_km": 87.2
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "plovdiv",
+      "cached_km": 90,
+      "ors_km": 79.8,
+      "diff_km": 10.2
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "pomorie",
+      "cached_km": 295,
+      "ors_km": 329.0,
+      "diff_km": 34.0
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "popovo",
+      "cached_km": 265,
+      "ors_km": 365.9,
+      "diff_km": 100.9
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "razgrad",
+      "cached_km": 315,
+      "ors_km": 382.1,
+      "diff_km": 67.1
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "ruse",
+      "cached_km": 295,
+      "ors_km": 314.4,
+      "diff_km": 19.4
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "shumen",
+      "cached_km": 315,
+      "ors_km": 373.6,
+      "diff_km": 58.6
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "silistra",
+      "cached_km": 415,
+      "ors_km": 486.5,
+      "diff_km": 71.5
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "sliven",
+      "cached_km": 175,
+      "ors_km": 238.2,
+      "diff_km": 63.2
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "smolyan",
+      "cached_km": 200,
+      "ors_km": 177.8,
+      "diff_km": 22.2
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "sofia",
+      "cached_km": 162,
+      "ors_km": 138.0,
+      "diff_km": 24.0
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "stara zagora",
+      "cached_km": 130,
+      "ors_km": 163.8,
+      "diff_km": 33.8
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "svilengrad",
+      "cached_km": 230,
+      "ors_km": 211.9,
+      "diff_km": 18.1
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "targovishte",
+      "cached_km": 295,
+      "ors_km": 348.8,
+      "diff_km": 53.8
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "troyan",
+      "cached_km": 215,
+      "ors_km": 131.6,
+      "diff_km": 83.4
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "varna",
+      "cached_km": 405,
+      "ors_km": 437.7,
+      "diff_km": 32.7
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "veliko tarnovo",
+      "cached_km": 195,
+      "ors_km": 282.5,
+      "diff_km": 87.5
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "velingrad",
+      "cached_km": 100,
+      "ors_km": 87.6,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "vidin",
+      "cached_km": 397,
+      "ors_km": 284.2,
+      "diff_km": 112.8
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "vratsa",
+      "cached_km": 277,
+      "ors_km": 142.7,
+      "diff_km": 134.3
+    },
+    {
+      "city_a": "panagyurishte",
+      "city_b": "yambol",
+      "cached_km": 205,
+      "ors_km": 236.2,
+      "diff_km": 31.2
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "pernik",
+      "cached_km": 147,
+      "ors_km": 160.3,
+      "diff_km": 13.3
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "petrich",
+      "cached_km": 280,
+      "ors_km": 74.9,
+      "diff_km": 205.1
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "pleven",
+      "cached_km": 284,
+      "ors_km": 259.1,
+      "diff_km": 24.9
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "plovdiv",
+      "cached_km": 40,
+      "ors_km": 54.0,
+      "diff_km": 14.0
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "popovo",
+      "cached_km": 315,
+      "ors_km": 340.1,
+      "diff_km": 25.1
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "ruse",
+      "cached_km": 345,
+      "ors_km": 360.1,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "sandanski",
+      "cached_km": 255,
+      "ors_km": 288.1,
+      "diff_km": 33.1
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "sevlievo",
+      "cached_km": 225,
+      "ors_km": 272.5,
+      "diff_km": 47.5
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "shumen",
+      "cached_km": 365,
+      "ors_km": 347.8,
+      "diff_km": 17.2
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "sliven",
+      "cached_km": 200,
+      "ors_km": 212.4,
+      "diff_km": 12.4
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "targovishte",
+      "cached_km": 345,
+      "ors_km": 323.0,
+      "diff_km": 22.0
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "troyan",
+      "cached_km": 265,
+      "ors_km": 162.1,
+      "diff_km": 102.9
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "varna",
+      "cached_km": 425,
+      "ors_km": 411.9,
+      "diff_km": 13.1
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "veliko tarnovo",
+      "cached_km": 245,
+      "ors_km": 256.8,
+      "diff_km": 11.8
+    },
+    {
+      "city_a": "pazardzhik",
+      "city_b": "vratsa",
+      "cached_km": 227,
+      "ors_km": 210.0,
+      "diff_km": 17.0
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "petrich",
+      "cached_km": 190,
+      "ors_km": 120.2,
+      "diff_km": 69.8
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "silistra",
+      "cached_km": 487,
+      "ors_km": 467.0,
+      "diff_km": 20.0
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "targovishte",
+      "cached_km": 392,
+      "ors_km": 461.6,
+      "diff_km": 69.6
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "troyan",
+      "cached_km": 212,
+      "ors_km": 192.0,
+      "diff_km": 20.0
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "veliko tarnovo",
+      "cached_km": 292,
+      "ors_km": 258.0,
+      "diff_km": 34.0
+    },
+    {
+      "city_a": "pernik",
+      "city_b": "vidin",
+      "cached_km": 270,
+      "ors_km": 233.5,
+      "diff_km": 36.5
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "pleven",
+      "cached_km": 372,
+      "ors_km": 157.4,
+      "diff_km": 214.6
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "plovdiv",
+      "cached_km": 280,
+      "ors_km": 110.0,
+      "diff_km": 170.0
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "pomorie",
+      "cached_km": 550,
+      "ors_km": 359.2,
+      "diff_km": 190.8
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "popovo",
+      "cached_km": 527,
+      "ors_km": 302.5,
+      "diff_km": 224.5
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "razgrad",
+      "cached_km": 577,
+      "ors_km": 412.2,
+      "diff_km": 164.8
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "ruse",
+      "cached_km": 532,
+      "ors_km": 304.0,
+      "diff_km": 228.0
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "samokov",
+      "cached_km": 200,
+      "ors_km": 96.9,
+      "diff_km": 103.1
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "sandanski",
+      "cached_km": 25,
+      "ors_km": 249.9,
+      "diff_km": 224.9
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "sevlievo",
+      "cached_km": 437,
+      "ors_km": 170.8,
+      "diff_km": 266.2
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "shumen",
+      "cached_km": 577,
+      "ors_km": 403.8,
+      "diff_km": 173.2
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "silistra",
+      "cached_km": 652,
+      "ors_km": 424.1,
+      "diff_km": 227.9
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "sliven",
+      "cached_km": 435,
+      "ors_km": 268.3,
+      "diff_km": 166.7
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "smolyan",
+      "cached_km": 170,
+      "ors_km": 208.0,
+      "diff_km": 38.0
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "sofia",
+      "cached_km": 200,
+      "ors_km": 81.6,
+      "diff_km": 118.4
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "stara zagora",
+      "cached_km": 370,
+      "ors_km": 194.0,
+      "diff_km": 176.0
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "svilengrad",
+      "cached_km": 380,
+      "ors_km": 242.0,
+      "diff_km": 138.0
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "targovishte",
+      "cached_km": 557,
+      "ors_km": 378.9,
+      "diff_km": 178.1
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "troyan",
+      "cached_km": 377,
+      "ors_km": 118.7,
+      "diff_km": 258.3
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "velingrad",
+      "cached_km": 280,
+      "ors_km": 117.8,
+      "diff_km": 162.2
+    },
+    {
+      "city_a": "petrich",
+      "city_b": "yambol",
+      "cached_km": 440,
+      "ors_km": 266.4,
+      "diff_km": 173.6
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "popovo",
+      "cached_km": 165,
+      "ors_km": 145.3,
+      "diff_km": 19.7
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "razgrad",
+      "cached_km": 215,
+      "ors_km": 180.3,
+      "diff_km": 34.7
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "ruse",
+      "cached_km": 160,
+      "ors_km": 146.8,
+      "diff_km": 13.2
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "sandanski",
+      "cached_km": 347,
+      "ors_km": 330.3,
+      "diff_km": 16.7
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "sevlievo",
+      "cached_km": 130,
+      "ors_km": 81.9,
+      "diff_km": 48.1
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "silistra",
+      "cached_km": 280,
+      "ors_km": 266.9,
+      "diff_km": 13.1
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "smolyan",
+      "cached_km": 375,
+      "ors_km": 392.9,
+      "diff_km": 17.9
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "stara zagora",
+      "cached_km": 195,
+      "ors_km": 226.8,
+      "diff_km": 31.8
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "svilengrad",
+      "cached_km": 355,
+      "ors_km": 427.0,
+      "diff_km": 72.0
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "targovishte",
+      "cached_km": 195,
+      "ors_km": 182.1,
+      "diff_km": 12.9
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "veliko tarnovo",
+      "cached_km": 95,
+      "ors_km": 126.1,
+      "diff_km": 31.1
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "velingrad",
+      "cached_km": 332,
+      "ors_km": 302.9,
+      "diff_km": 29.1
+    },
+    {
+      "city_a": "pleven",
+      "city_b": "vidin",
+      "cached_km": 220,
+      "ors_km": 204.6,
+      "diff_km": 15.4
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "popovo",
+      "cached_km": 275,
+      "ors_km": 303.5,
+      "diff_km": 28.5
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "ruse",
+      "cached_km": 305,
+      "ors_km": 323.5,
+      "diff_km": 18.5
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "samokov",
+      "cached_km": 120,
+      "ors_km": 136.2,
+      "diff_km": 16.2
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "sandanski",
+      "cached_km": 270,
+      "ors_km": 323.4,
+      "diff_km": 53.4
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "shumen",
+      "cached_km": 325,
+      "ors_km": 311.2,
+      "diff_km": 13.8
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "sliven",
+      "cached_km": 160,
+      "ors_km": 175.7,
+      "diff_km": 15.7
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "smolyan",
+      "cached_km": 110,
+      "ors_km": 99.4,
+      "diff_km": 10.6
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "targovishte",
+      "cached_km": 305,
+      "ors_km": 286.3,
+      "diff_km": 18.7
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "veliko tarnovo",
+      "cached_km": 205,
+      "ors_km": 220.1,
+      "diff_km": 15.1
+    },
+    {
+      "city_a": "plovdiv",
+      "city_b": "vratsa",
+      "cached_km": 265,
+      "ors_km": 245.3,
+      "diff_km": 19.7
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "popovo",
+      "cached_km": 290,
+      "ors_km": 225.6,
+      "diff_km": 64.4
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "razgrad",
+      "cached_km": 300,
+      "ors_km": 241.8,
+      "diff_km": 58.2
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "ruse",
+      "cached_km": 370,
+      "ors_km": 305.2,
+      "diff_km": 64.8
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "samokov",
+      "cached_km": 395,
+      "ors_km": 383.7,
+      "diff_km": 11.3
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "sandanski",
+      "cached_km": 540,
+      "ors_km": 570.9,
+      "diff_km": 30.9
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "shumen",
+      "cached_km": 240,
+      "ors_km": 164.4,
+      "diff_km": 75.6
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "silistra",
+      "cached_km": 325,
+      "ors_km": 252.7,
+      "diff_km": 72.3
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "smolyan",
+      "cached_km": 380,
+      "ors_km": 359.4,
+      "diff_km": 20.6
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "sofia",
+      "cached_km": 425,
+      "ors_km": 396.2,
+      "diff_km": 28.8
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "stara zagora",
+      "cached_km": 220,
+      "ors_km": 185.1,
+      "diff_km": 34.9
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "svilengrad",
+      "cached_km": 340,
+      "ors_km": 320.1,
+      "diff_km": 19.9
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "targovishte",
+      "cached_km": 280,
+      "ors_km": 208.5,
+      "diff_km": 71.5
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "troyan",
+      "cached_km": 320,
+      "ors_km": 373.0,
+      "diff_km": 53.0
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "varna",
+      "cached_km": 150,
+      "ors_km": 114.1,
+      "diff_km": 35.9
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "veliko tarnovo",
+      "cached_km": 300,
+      "ors_km": 238.3,
+      "diff_km": 61.7
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "velingrad",
+      "cached_km": 365,
+      "ors_km": 346.0,
+      "diff_km": 19.0
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "vidin",
+      "cached_km": 580,
+      "ors_km": 634.3,
+      "diff_km": 54.3
+    },
+    {
+      "city_a": "pomorie",
+      "city_b": "vratsa",
+      "cached_km": 460,
+      "ors_km": 492.7,
+      "diff_km": 32.7
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "razgrad",
+      "cached_km": 50,
+      "ors_km": 35.6,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "ruse",
+      "cached_km": 120,
+      "ors_km": 73.5,
+      "diff_km": 46.5
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "samokov",
+      "cached_km": 387,
+      "ors_km": 420.9,
+      "diff_km": 33.9
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "sandanski",
+      "cached_km": 502,
+      "ors_km": 475.6,
+      "diff_km": 26.4
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "sevlievo",
+      "cached_km": 105,
+      "ors_km": 119.4,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "shumen",
+      "cached_km": 50,
+      "ors_km": 76.7,
+      "diff_km": 26.7
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "sofia",
+      "cached_km": 327,
+      "ors_km": 307.3,
+      "diff_km": 19.7
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "stara zagora",
+      "cached_km": 205,
+      "ors_km": 222.3,
+      "diff_km": 17.3
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "varna",
+      "cached_km": 140,
+      "ors_km": 156.5,
+      "diff_km": 16.5
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "velingrad",
+      "cached_km": 365,
+      "ors_km": 383.2,
+      "diff_km": 18.2
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "vidin",
+      "cached_km": 385,
+      "ors_km": 472.2,
+      "diff_km": 87.2
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "vratsa",
+      "cached_km": 265,
+      "ors_km": 250.6,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "popovo",
+      "city_b": "yambol",
+      "cached_km": 280,
+      "ors_km": 143.1,
+      "diff_km": 136.9
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "sandanski",
+      "cached_km": 552,
+      "ors_km": 624.4,
+      "diff_km": 72.4
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "silistra",
+      "cached_km": 100,
+      "ors_km": 131.0,
+      "diff_km": 31.0
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "sliven",
+      "cached_km": 300,
+      "ors_km": 149.5,
+      "diff_km": 150.5
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "smolyan",
+      "cached_km": 435,
+      "ors_km": 413.0,
+      "diff_km": 22.0
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "sofia",
+      "cached_km": 377,
+      "ors_km": 449.7,
+      "diff_km": 72.7
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "stara zagora",
+      "cached_km": 255,
+      "ors_km": 238.7,
+      "diff_km": 16.3
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "svilengrad",
+      "cached_km": 415,
+      "ors_km": 373.7,
+      "diff_km": 41.3
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "targovishte",
+      "cached_km": 50,
+      "ors_km": 35.7,
+      "diff_km": 14.3
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "troyan",
+      "cached_km": 230,
+      "ors_km": 206.8,
+      "diff_km": 23.2
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "varna",
+      "cached_km": 150,
+      "ors_km": 130.1,
+      "diff_km": 19.9
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "veliko tarnovo",
+      "cached_km": 120,
+      "ors_km": 108.6,
+      "diff_km": 11.4
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "velingrad",
+      "cached_km": 415,
+      "ors_km": 399.6,
+      "diff_km": 15.4
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "vidin",
+      "cached_km": 435,
+      "ors_km": 462.7,
+      "diff_km": 27.7
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "vratsa",
+      "cached_km": 315,
+      "ors_km": 285.6,
+      "diff_km": 29.4
+    },
+    {
+      "city_a": "razgrad",
+      "city_b": "yambol",
+      "cached_km": 330,
+      "ors_km": 159.5,
+      "diff_km": 170.5
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "sandanski",
+      "cached_km": 507,
+      "ors_km": 477.5,
+      "diff_km": 29.5
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "shumen",
+      "cached_km": 130,
+      "ors_km": 111.8,
+      "diff_km": 18.2
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "sliven",
+      "cached_km": 280,
+      "ors_km": 211.5,
+      "diff_km": 68.5
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "sofia",
+      "cached_km": 332,
+      "ors_km": 309.3,
+      "diff_km": 22.7
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "stara zagora",
+      "cached_km": 235,
+      "ors_km": 212.6,
+      "diff_km": 22.4
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "svilengrad",
+      "cached_km": 395,
+      "ors_km": 296.1,
+      "diff_km": 98.9
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "targovishte",
+      "cached_km": 110,
+      "ors_km": 97.8,
+      "diff_km": 12.2
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "troyan",
+      "cached_km": 210,
+      "ors_km": 189.4,
+      "diff_km": 20.6
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "varna",
+      "cached_km": 220,
+      "ors_km": 191.7,
+      "diff_km": 28.3
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "vidin",
+      "cached_km": 380,
+      "ors_km": 402.0,
+      "diff_km": 22.0
+    },
+    {
+      "city_a": "ruse",
+      "city_b": "yambol",
+      "cached_km": 310,
+      "ors_km": 221.6,
+      "diff_km": 88.4
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "sandanski",
+      "cached_km": 175,
+      "ors_km": 141.9,
+      "diff_km": 33.1
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "sevlievo",
+      "cached_km": 297,
+      "ors_km": 251.1,
+      "diff_km": 45.9
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "silistra",
+      "cached_km": 512,
+      "ors_km": 542.1,
+      "diff_km": 30.1
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "sliven",
+      "cached_km": 280,
+      "ors_km": 293.7,
+      "diff_km": 13.7
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "smolyan",
+      "cached_km": 210,
+      "ors_km": 233.4,
+      "diff_km": 23.4
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "sofia",
+      "cached_km": 60,
+      "ors_km": 92.0,
+      "diff_km": 32.0
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "targovishte",
+      "cached_km": 417,
+      "ors_km": 404.3,
+      "diff_km": 12.7
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "varna",
+      "cached_km": 505,
+      "ors_km": 493.2,
+      "diff_km": 11.8
+    },
+    {
+      "city_a": "samokov",
+      "city_b": "vratsa",
+      "cached_km": 175,
+      "ors_km": 188.6,
+      "diff_km": 13.6
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "shumen",
+      "cached_km": 552,
+      "ors_km": 614.0,
+      "diff_km": 62.0
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "smolyan",
+      "cached_km": 160,
+      "ors_km": 207.6,
+      "diff_km": 47.6
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "svilengrad",
+      "cached_km": 370,
+      "ors_km": 452.3,
+      "diff_km": 82.3
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "targovishte",
+      "cached_km": 532,
+      "ors_km": 589.2,
+      "diff_km": 57.2
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "troyan",
+      "cached_km": 352,
+      "ors_km": 319.6,
+      "diff_km": 32.4
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "varna",
+      "cached_km": 642,
+      "ors_km": 678.1,
+      "diff_km": 36.1
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "veliko tarnovo",
+      "cached_km": 432,
+      "ors_km": 385.5,
+      "diff_km": 46.5
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "velingrad",
+      "cached_km": 270,
+      "ors_km": 154.4,
+      "diff_km": 115.6
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "vidin",
+      "cached_km": 410,
+      "ors_km": 361.1,
+      "diff_km": 48.9
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "vratsa",
+      "cached_km": 290,
+      "ors_km": 278.8,
+      "diff_km": 11.2
+    },
+    {
+      "city_a": "sandanski",
+      "city_b": "yambol",
+      "cached_km": 430,
+      "ors_km": 476.7,
+      "diff_km": 46.7
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "shumen",
+      "cached_km": 155,
+      "ors_km": 196.5,
+      "diff_km": 41.5
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "silistra",
+      "cached_km": 255,
+      "ors_km": 269.4,
+      "diff_km": 14.4
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "smolyan",
+      "cached_km": 295,
+      "ors_km": 267.0,
+      "diff_km": 28.0
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "sofia",
+      "cached_km": 237,
+      "ors_km": 175.0,
+      "diff_km": 62.0
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "stara zagora",
+      "cached_km": 115,
+      "ors_km": 155.1,
+      "diff_km": 40.1
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "svilengrad",
+      "cached_km": 275,
+      "ors_km": 238.7,
+      "diff_km": 36.3
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "targovishte",
+      "cached_km": 135,
+      "ors_km": 156.3,
+      "diff_km": 21.3
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "troyan",
+      "cached_km": 90,
+      "ors_km": 44.9,
+      "diff_km": 45.1
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "varna",
+      "cached_km": 245,
+      "ors_km": 276.4,
+      "diff_km": 31.4
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "velingrad",
+      "cached_km": 275,
+      "ors_km": 315.9,
+      "diff_km": 40.9
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "vidin",
+      "cached_km": 350,
+      "ors_km": 312.6,
+      "diff_km": 37.4
+    },
+    {
+      "city_a": "sevlievo",
+      "city_b": "vratsa",
+      "cached_km": 230,
+      "ors_km": 171.1,
+      "diff_km": 58.9
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "silistra",
+      "cached_km": 160,
+      "ors_km": 113.4,
+      "diff_km": 46.6
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "sliven",
+      "cached_km": 300,
+      "ors_km": 138.2,
+      "diff_km": 161.8
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "smolyan",
+      "cached_km": 435,
+      "ors_km": 404.5,
+      "diff_km": 30.5
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "sofia",
+      "cached_km": 377,
+      "ors_km": 441.2,
+      "diff_km": 64.2
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "stara zagora",
+      "cached_km": 255,
+      "ors_km": 230.2,
+      "diff_km": 24.8
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "svilengrad",
+      "cached_km": 415,
+      "ors_km": 365.1,
+      "diff_km": 49.9
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "troyan",
+      "cached_km": 230,
+      "ors_km": 248.6,
+      "diff_km": 18.6
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "veliko tarnovo",
+      "cached_km": 120,
+      "ors_km": 150.4,
+      "diff_km": 30.4
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "velingrad",
+      "cached_km": 415,
+      "ors_km": 391.0,
+      "diff_km": 24.0
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "vidin",
+      "cached_km": 435,
+      "ors_km": 511.6,
+      "diff_km": 76.6
+    },
+    {
+      "city_a": "shumen",
+      "city_b": "yambol",
+      "cached_km": 310,
+      "ors_km": 151.5,
+      "diff_km": 158.5
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "stara zagora",
+      "cached_km": 355,
+      "ors_km": 343.1,
+      "diff_km": 11.9
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "svilengrad",
+      "cached_km": 515,
+      "ors_km": 478.1,
+      "diff_km": 36.9
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "troyan",
+      "cached_km": 330,
+      "ors_km": 309.3,
+      "diff_km": 20.7
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "varna",
+      "cached_km": 175,
+      "ors_km": 141.6,
+      "diff_km": 33.4
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "velingrad",
+      "cached_km": 515,
+      "ors_km": 504.0,
+      "diff_km": 11.0
+    },
+    {
+      "city_a": "silistra",
+      "city_b": "yambol",
+      "cached_km": 395,
+      "ors_km": 264.5,
+      "diff_km": 130.5
+    },
+    {
+      "city_a": "sliven",
+      "city_b": "targovishte",
+      "cached_km": 280,
+      "ors_km": 115.5,
+      "diff_km": 164.5
+    },
+    {
+      "city_a": "sliven",
+      "city_b": "veliko tarnovo",
+      "cached_km": 180,
+      "ors_km": 114.2,
+      "diff_km": 65.8
+    },
+    {
+      "city_a": "sliven",
+      "city_b": "vidin",
+      "cached_km": 460,
+      "ors_km": 543.1,
+      "diff_km": 83.1
+    },
+    {
+      "city_a": "sliven",
+      "city_b": "vratsa",
+      "cached_km": 340,
+      "ors_km": 401.5,
+      "diff_km": 61.5
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "sofia",
+      "cached_km": 260,
+      "ors_km": 245.5,
+      "diff_km": 14.5
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "svilengrad",
+      "cached_km": 210,
+      "ors_km": 241.2,
+      "diff_km": 31.2
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "targovishte",
+      "cached_km": 415,
+      "ors_km": 378.1,
+      "diff_km": 36.9
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "troyan",
+      "cached_km": 335,
+      "ors_km": 222.0,
+      "diff_km": 113.0
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "varna",
+      "cached_km": 490,
+      "ors_km": 467.0,
+      "diff_km": 23.0
+    },
+    {
+      "city_a": "smolyan",
+      "city_b": "velingrad",
+      "cached_km": 110,
+      "ors_km": 146.6,
+      "diff_km": 36.6
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "targovishte",
+      "cached_km": 357,
+      "ors_km": 417.2,
+      "diff_km": 60.2
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "troyan",
+      "cached_km": 177,
+      "ors_km": 156.5,
+      "diff_km": 20.5
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "varna",
+      "cached_km": 467,
+      "ors_km": 506.1,
+      "diff_km": 39.1
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "veliko tarnovo",
+      "cached_km": 257,
+      "ors_km": 222.5,
+      "diff_km": 34.5
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "vidin",
+      "cached_km": 235,
+      "ors_km": 218.7,
+      "diff_km": 16.3
+    },
+    {
+      "city_a": "sofia",
+      "city_b": "yambol",
+      "cached_km": 315,
+      "ors_km": 304.7,
+      "diff_km": 10.3
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "targovishte",
+      "cached_km": 235,
+      "ors_km": 206.1,
+      "diff_km": 28.9
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "varna",
+      "cached_km": 330,
+      "ors_km": 295.0,
+      "diff_km": 35.0
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "veliko tarnovo",
+      "cached_km": 135,
+      "ors_km": 107.9,
+      "diff_km": 27.1
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "vidin",
+      "cached_km": 415,
+      "ors_km": 468.9,
+      "diff_km": 53.9
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "vratsa",
+      "cached_km": 295,
+      "ors_km": 327.3,
+      "diff_km": 32.3
+    },
+    {
+      "city_a": "stara zagora",
+      "city_b": "yambol",
+      "cached_km": 110,
+      "ors_km": 93.6,
+      "diff_km": 16.4
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "targovishte",
+      "cached_km": 395,
+      "ors_km": 334.1,
+      "diff_km": 60.9
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "troyan",
+      "cached_km": 315,
+      "ors_km": 257.2,
+      "diff_km": 57.8
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "varna",
+      "cached_km": 450,
+      "ors_km": 423.0,
+      "diff_km": 27.0
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "veliko tarnovo",
+      "cached_km": 295,
+      "ors_km": 267.9,
+      "diff_km": 27.1
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "vratsa",
+      "cached_km": 405,
+      "ors_km": 377.0,
+      "diff_km": 28.0
+    },
+    {
+      "city_a": "svilengrad",
+      "city_b": "yambol",
+      "cached_km": 230,
+      "ors_km": 116.5,
+      "diff_km": 113.5
+    },
+    {
+      "city_a": "targovishte",
+      "city_b": "veliko tarnovo",
+      "cached_km": 100,
+      "ors_km": 110.6,
+      "diff_km": 10.6
+    },
+    {
+      "city_a": "targovishte",
+      "city_b": "velingrad",
+      "cached_km": 395,
+      "ors_km": 366.0,
+      "diff_km": 29.0
+    },
+    {
+      "city_a": "targovishte",
+      "city_b": "yambol",
+      "cached_km": 310,
+      "ors_km": 126.0,
+      "diff_km": 184.0
+    },
+    {
+      "city_a": "troyan",
+      "city_b": "velingrad",
+      "cached_km": 315,
+      "ors_km": 205.3,
+      "diff_km": 109.7
+    },
+    {
+      "city_a": "troyan",
+      "city_b": "vratsa",
+      "cached_km": 170,
+      "ors_km": 148.0,
+      "diff_km": 22.0
+    },
+    {
+      "city_a": "troyan",
+      "city_b": "yambol",
+      "cached_km": 230,
+      "ors_km": 281.7,
+      "diff_km": 51.7
+    },
+    {
+      "city_a": "varna",
+      "city_b": "veliko tarnovo",
+      "cached_km": 210,
+      "ors_km": 230.6,
+      "diff_km": 20.6
+    },
+    {
+      "city_a": "varna",
+      "city_b": "velingrad",
+      "cached_km": 475,
+      "ors_km": 453.6,
+      "diff_km": 21.4
+    },
+    {
+      "city_a": "varna",
+      "city_b": "vidin",
+      "cached_km": 525,
+      "ors_km": 591.8,
+      "diff_km": 66.8
+    },
+    {
+      "city_a": "veliko tarnovo",
+      "city_b": "vidin",
+      "cached_km": 315,
+      "ors_km": 356.7,
+      "diff_km": 41.7
+    },
+    {
+      "city_a": "veliko tarnovo",
+      "city_b": "vratsa",
+      "cached_km": 195,
+      "ors_km": 215.1,
+      "diff_km": 20.1
+    },
+    {
+      "city_a": "veliko tarnovo",
+      "city_b": "yambol",
+      "cached_km": 210,
+      "ors_km": 146.4,
+      "diff_km": 63.6
+    },
+    {
+      "city_a": "velingrad",
+      "city_b": "vratsa",
+      "cached_km": 275,
+      "ors_km": 252.9,
+      "diff_km": 22.1
+    },
+    {
+      "city_a": "vidin",
+      "city_b": "vratsa",
+      "cached_km": 120,
+      "ors_km": 141.6,
+      "diff_km": 21.6
+    },
+    {
+      "city_a": "vidin",
+      "city_b": "yambol",
+      "cached_km": 490,
+      "ors_km": 543.8,
+      "diff_km": 53.8
+    },
+    {
+      "city_a": "vratsa",
+      "city_b": "yambol",
+      "cached_km": 370,
+      "ors_km": 401.9,
+      "diff_km": 31.9
+    }
+  ],
+  "verified_ok": 274,
+  "errors": [
+    {
+      "pair": "asenovgrad|silistra",
+      "reason": "API error"
+    },
+    {
+      "pair": "blagoevgrad|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "botevgrad|pernik",
+      "reason": "API error"
+    },
+    {
+      "pair": "botevgrad|petrich",
+      "reason": "API error"
+    },
+    {
+      "pair": "botevgrad|plovdiv",
+      "reason": "API error"
+    },
+    {
+      "pair": "botevgrad|pomorie",
+      "reason": "API error"
+    },
+    {
+      "pair": "burgas|veliko tarnovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "burgas|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "burgas|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "burgas|yambol",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|dobrich",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|gabrovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|svilengrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|targovishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "chirpan|velingrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|nova zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|panagyurishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|pazardzhik",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|pernik",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|petrich",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|pleven",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|plovdiv",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|popovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|razgrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|samokov",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|sandanski",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|shumen",
+      "reason": "API error"
+    },
+    {
+      "pair": "dimitrovgrad|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "dobrich|montana",
+      "reason": "API error"
+    },
+    {
+      "pair": "dobrich|popovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "dobrich|ruse",
+      "reason": "API error"
+    },
+    {
+      "pair": "dobrich|sandanski",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|karlovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|kazanlak",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|lovech",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|montana",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|pazardzhik",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|pernik",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|petrich",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|pleven",
+      "reason": "API error"
+    },
+    {
+      "pair": "dupnitsa|plovdiv",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|gotse delchev",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|karlovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|kazanlak",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|lovech",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|nova zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "gabrovo|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|gotse delchev",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|harmanli",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|kardzhali",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|kazanlak",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|kyustendil",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|lom",
+      "reason": "API error"
+    },
+    {
+      "pair": "gorna oryahovitsa|yambol",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|kardzhali",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|kazanlak",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|targovishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|velingrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "gotse delchev|yambol",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|haskovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|kardzhali",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|svilengrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|velingrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "harmanli|yambol",
+      "reason": "API error"
+    },
+    {
+      "pair": "haskovo|troyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "haskovo|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "haskovo|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "haskovo|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "haskovo|yambol",
+      "reason": "API error"
+    },
+    {
+      "pair": "kardzhali|karlovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "kardzhali|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "kardzhali|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "karlovo|targovishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "karlovo|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "kazanlak|kyustendil",
+      "reason": "API error"
+    },
+    {
+      "pair": "kazanlak|lovech",
+      "reason": "API error"
+    },
+    {
+      "pair": "kazanlak|pazardzhik",
+      "reason": "API error"
+    },
+    {
+      "pair": "kazanlak|pernik",
+      "reason": "API error"
+    },
+    {
+      "pair": "lom|popovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "lovech|popovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "lovech|razgrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "lovech|samokov",
+      "reason": "API error"
+    },
+    {
+      "pair": "lovech|shumen",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|silistra",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|svilengrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "montana|targovishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|sandanski",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|sevlievo",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|silistra",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|targovishte",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|veliko tarnovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "nova zagora|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "pazardzhik|pomorie",
+      "reason": "API error"
+    },
+    {
+      "pair": "pazardzhik|samokov",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|pomorie",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|popovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|razgrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|ruse",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|samokov",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|sandanski",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|sevlievo",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|shumen",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "pernik|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "petrich|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "petrich|veliko tarnovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "petrich|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "petrich|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "pleven|plovdiv",
+      "reason": "API error"
+    },
+    {
+      "pair": "pleven|samokov",
+      "reason": "API error"
+    },
+    {
+      "pair": "plovdiv|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "plovdiv|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "plovdiv|troyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "plovdiv|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "plovdiv|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "popovo|silistra",
+      "reason": "API error"
+    },
+    {
+      "pair": "popovo|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "popovo|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "popovo|svilengrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "popovo|troyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "samokov|veliko tarnovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "samokov|velingrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "samokov|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "sandanski|sevlievo",
+      "reason": "API error"
+    },
+    {
+      "pair": "sandanski|silistra",
+      "reason": "API error"
+    },
+    {
+      "pair": "sandanski|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "sandanski|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "shumen|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "silistra|sliven",
+      "reason": "API error"
+    },
+    {
+      "pair": "silistra|smolyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "silistra|sofia",
+      "reason": "API error"
+    },
+    {
+      "pair": "smolyan|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "smolyan|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "smolyan|vratsa",
+      "reason": "API error"
+    },
+    {
+      "pair": "sofia|stara zagora",
+      "reason": "API error"
+    },
+    {
+      "pair": "sofia|svilengrad",
+      "reason": "API error"
+    },
+    {
+      "pair": "targovishte|troyan",
+      "reason": "API error"
+    },
+    {
+      "pair": "targovishte|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "targovishte|vidin",
+      "reason": "API error"
+    },
+    {
+      "pair": "troyan|varna",
+      "reason": "API error"
+    },
+    {
+      "pair": "troyan|veliko tarnovo",
+      "reason": "API error"
+    },
+    {
+      "pair": "troyan|vidin",
+      "reason": "API error"
+    }
+  ]
+}

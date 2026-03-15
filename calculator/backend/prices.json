@@ -1,0 +1,73 @@
+{
+  "_comment": "Rocket Logistic pricing config. All prices in EUR. Distance-based model.",
+  "_version": "2.0",
+
+  "settings": {
+    "currency": "EUR",
+    "price_range_pct": 12
+  },
+
+  "surcharges": {
+    "fuel_pct": 15,
+    "express_pct": 25,
+    "dangerous_goods_pct": 30
+  },
+
+  "pickup_drop_surcharge": {
+    "ftl_eur": 80,
+    "ltl_eur": 60
+  },
+
+  "truck_type_multipliers": {
+    "standard":     1.0,
+    "refrigerated": 1.35,
+    "flatbed":      1.20
+  },
+
+  "ftl_weight_multipliers": [
+    { "min_kg": 0,     "max_kg": 5000,  "multiplier": 0.96 },
+    { "min_kg": 5000,  "max_kg": 15000, "multiplier": 0.98 },
+    { "min_kg": 15000, "max_kg": null,   "multiplier": 1.00 }
+  ],
+
+  "ltl_config": {
+    "density_factor_kg_per_m2": 500,
+    "non_pallet_multiplier": 1.15,
+    "pallet_dimensions_m2": {
+      "eur":        0.96,
+      "industrial": 1.20
+    }
+  },
+
+  "rates": {
+    "domestic": {
+      "ftl_eur_per_km":        1.00,
+      "ltl_eur_per_m2_per_km": 0.075
+    },
+    "international": {
+      "ftl_eur_per_km":        1.30,
+      "ltl_eur_per_m2_per_km": 0.090
+    }
+  },
+
+  "country_multipliers": {
+    "RO": { "import": 1.00, "export": 1.00 },
+    "GR": { "import": 1.00, "export": 1.00 },
+    "DE": { "import": 1.00, "export": 1.00 },
+    "AT": { "import": 1.00, "export": 1.00 },
+    "HU": { "import": 1.00, "export": 1.00 },
+    "PL": { "import": 1.00, "export": 1.00 },
+    "CZ": { "import": 1.00, "export": 1.00 },
+    "SK": { "import": 1.00, "export": 1.00 },
+    "IT": { "import": 1.00, "export": 1.00 },
+    "FR": { "import": 1.00, "export": 1.00 },
+    "ES": { "import": 1.00, "export": 1.00 },
+    "NL": { "import": 1.00, "export": 1.00 },
+    "BE": { "import": 1.00, "export": 1.00 },
+    "TR": { "import": 1.00, "export": 1.00 },
+    "RS": { "import": 1.00, "export": 1.00 },
+    "MK": { "import": 1.00, "export": 1.00 }
+  },
+
+  "distances_km": {}
+}

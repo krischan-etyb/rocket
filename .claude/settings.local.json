@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b C:UsersTihomir-PCDocumentsclauderocket)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\backend\\\\submissions\" && mkdir -p \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\frontend\\\\bg\" && mkdir -p \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\frontend\\\\css\" && mkdir -p \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\frontend\\\\js\" && mkdir -p \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\tests\" && echo \"Directories created\")",
+      "Bash(echo \"\" > \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\.gitignore\" && echo \"\" > \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\pytest.ini\" && echo \"\" > \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\backend\\\\submissions\\\\.gitkeep\" && echo \"\" > \"C:\\\\Users\\\\Tihomir-PC\\\\Documents\\\\claude\\\\rocket\\\\calculator\\\\backend\\\\run.py\" && echo \"created\")",
+      "Bash(python -m pytest tests/ -v)"
+    ]
+  }
+}

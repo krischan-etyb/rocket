@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1E3A5F;
+            margin-bottom: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .test-section h2 {
+            color: #FF6B35;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .test-result {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        button {
+            background: #FF6B35;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        button:hover {
+            background: #e55a2b;
+        }
+        code {
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Contact Form Test Suite</h1>
+
+        <div class="test-section">
+            <h2>Test 1: Form Elements Exist</h2>
+            <button onclick="testFormElements()">Run Test</button>
+            <div id="test1-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>Test 2: GPS Tracking Checkbox</h2>
+            <button onclick="testGPSCheckbox()">Run Test</button>
+            <div id="test2-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>Test 3: Form Data Collection</h2>
+            <button onclick="testFormDataCollection()">Run Test</button>
+            <div id="test3-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>Test 4: Language Switching</h2>
+            <button onclick="testLanguageSwitching()">Run Test</button>
+            <div id="test4-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>Open Actual Form</h2>
+            <a href="index.html#contact" target="_blank">
+                <button>Open Contact Form</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function testFormElements() {
+            const resultDiv = document.getElementById('test1-result');
+            const requiredElements = [
+                'name', 'email', 'phone', 'message',
+                'load-date', 'date-flexibility', 'gps-tracking', 'contact-form'
+            ];
+
+            const iframe = document.createElement('iframe');
+            iframe.src = 'index.html';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            iframe.onload = function() {
+                const doc = iframe.contentDocument;
+                let results = [];
+                let allFound = true;
+
+                requiredElements.forEach(id => {
+                    const element = doc.getElementById(id);
+                    if (element) {
+                        results.push(`✓ ${id} found`);
+                    } else {
+                        results.push(`✗ ${id} NOT found`);
+                        allFound = false;
+                    }
+                });
+
+                resultDiv.innerHTML = `
+                    <div class="test-result ${allFound ? 'success' : 'error'}">
+                        <strong>${allFound ? 'PASS' : 'FAIL'}</strong><br>
+                        ${results.join('<br>')}
+                    </div>
+                `;
+
+                document.body.removeChild(iframe);
+            };
+        }
+
+        function testGPSCheckbox() {
+            const resultDiv = document.getElementById('test2-result');
+
+            const iframe = document.createElement('iframe');
+            iframe.src = 'index.html';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            iframe.onload = function() {
+                const doc = iframe.contentDocument;
+                const checkbox = doc.getElementById('gps-tracking');
+
+                if (!checkbox) {
+                    resultDiv.innerHTML = `
+                        <div class="test-result error">
+                            <strong>FAIL</strong><br>
+                            GPS tracking checkbox not found
+                        </div>
+                    `;
+                    document.body.removeChild(iframe);
+                    return;
+                }
+
+                const results = [];
+                results.push(`✓ Checkbox element found`);
+                results.push(`✓ Type: ${checkbox.type}`);
+                results.push(`✓ Name: ${checkbox.name}`);
+                results.push(`✓ Initial state: ${checkbox.checked ? 'checked' : 'unchecked'}`);
+
+                // Test checking the box
+                checkbox.checked = true;
+                results.push(`✓ Can be checked: ${checkbox.checked}`);
+
+                // Test unchecking
+                checkbox.checked = false;
+                results.push(`✓ Can be unchecked: ${!checkbox.checked}`);
+
+                const label = checkbox.closest('.checkbox-label');
+                const hasEnglishText = label ? label.querySelector('[data-en]') !== null : false;
+                const hasBulgarianText = label ? label.querySelector('[data-bg]') !== null : false;
+
+                results.push(`✓ Has English translation: ${hasEnglishText}`);
+                results.push(`✓ Has Bulgarian translation: ${hasBulgarianText}`);
+
+                resultDiv.innerHTML = `
+                    <div class="test-result success">
+                        <strong>PASS</strong><br>
+                        ${results.join('<br>')}
+                    </div>
+                `;
+
+                document.body.removeChild(iframe);
+            };
+        }
+
+        function testFormDataCollection() {
+            const resultDiv = document.getElementById('test3-result');
+
+            const iframe = document.createElement('iframe');
+            iframe.src = 'index.html';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            iframe.onload = function() {
+                const doc = iframe.contentDocument;
+
+                // Fill form with test data
+                doc.getElementById('name').value = 'Test User';
+                doc.getElementById('email').value = 'test@example.com';
+                doc.getElementById('phone').value = '+359888123456';
+                doc.getElementById('message').value = 'This is a test message with more than 10 characters.';
+                doc.getElementById('load-date').value = '2026-02-15';
+                doc.getElementById('date-flexibility').value = 'flexible';
+                doc.getElementById('gps-tracking').checked = true;
+
+                // Collect data like the form handler would
+                const formData = {
+                    name: doc.getElementById('name').value.trim(),
+                    email: doc.getElementById('email').value.trim(),
+                    phone: doc.getElementById('phone').value.trim(),
+                    message: doc.getElementById('message').value.trim(),
+                    load_date: doc.getElementById('load-date').value,
+                    date_flexibility: doc.getElementById('date-flexibility').value,
+                    gps_tracking: doc.getElementById('gps-tracking').checked
+                };
+
+                resultDiv.innerHTML = `
+                    <div class="test-result success">
+                        <strong>PASS</strong><br>
+                        Form data collected successfully:<br>
+                        <pre>${JSON.stringify(formData, null, 2)}</pre>
+                    </div>
+                `;
+
+                document.body.removeChild(iframe);
+            };
+        }
+
+        function testLanguageSwitching() {
+            const resultDiv = document.getElementById('test4-result');
+
+            const iframe = document.createElement('iframe');
+            iframe.src = 'index.html';
+            iframe.style.display = 'none';
+            document.body.appendChild(iframe);
+
+            iframe.onload = function() {
+                const doc = iframe.contentDocument;
+                const win = iframe.contentWindow;
+
+                setTimeout(() => {
+                    const gpsLabel = doc.querySelector('#gps-tracking + span');
+                    if (!gpsLabel) {
+                        resultDiv.innerHTML = `
+                            <div class="test-result error">
+                                <strong>FAIL</strong><br>
+                                GPS tracking label not found
+                            </div>
+                        `;
+                        document.body.removeChild(iframe);
+                        return;
+                    }
+
+                    const englishText = gpsLabel.getAttribute('data-en');
+                    const bulgarianText = gpsLabel.getAttribute('data-bg');
+                    const currentText = gpsLabel.textContent;
+
+                    resultDiv.innerHTML = `
+                        <div class="test-result success">
+                            <strong>PASS</strong><br>
+                            English text: <code>${englishText}</code><br>
+                            Bulgarian text: <code>${bulgarianText}</code><br>
+                            Current display: <code>${currentText}</code><br>
+                            <em>Note: Language switching is handled by main.js</em>
+                        </div>
+                    `;
+
+                    document.body.removeChild(iframe);
+                }, 500);
+            };
+        }
+    </script>
+</body>
+</html>

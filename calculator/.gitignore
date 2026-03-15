@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# Submissions (user data — excluded from version control)
+backend/submissions/quotes.json
+backend/submissions/quotes.csv
+backend/submissions/contacts.json
+backend/submissions/contacts.csv
+
+# VS config
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/

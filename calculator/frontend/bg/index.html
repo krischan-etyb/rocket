@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#1050;&#1072;&#1083;&#1082;&#1091;&#1083;&#1072;&#1090;&#1086;&#1088; &#1085;&#1072; &#1094;&#1077;&#1085;&#1072; &mdash; Rocket Logistic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../../../assets/emblem.png">
+    <style>
+        /* =============================================
+           Price Calculator Section
+           ============================================= */
+
+        .price-calculator {
+            padding: var(--section-padding);
+            background-color: var(--color-white);
+        }
+
+        .price-calculator__body {
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: var(--space-2xl);
+            align-items: start;
+            margin-top: var(--space-2xl);
+        }
+
+        .price-calculator__form {
+            width: 100%;
+        }
+
+        .price-calculator__result {
+            position: sticky;
+            top: calc(var(--nav-height, 70px) + var(--space-lg));
+        }
+
+        /* Calc groups */
+        .calc-group {
+            margin-bottom: var(--space-xl);
+        }
+
+        /* Service type tabs */
+        .service-tabs {
+            margin-bottom: var(--space-xs);
+        }
+
+        .service-tabs__options {
+            display: flex;
+            border: 2px solid var(--color-gray-light);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .service-tabs__option {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            cursor: pointer;
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-weight: 600;
+            font-size: var(--fs-base, 1rem);
+            color: var(--color-gray);
+            background-color: var(--color-white);
+            transition: var(--transition);
+            user-select: none;
+            min-height: 44px;
+            text-align: center;
+        }
+
+        .service-tabs__option + .service-tabs__option {
+            border-left: 2px solid var(--color-gray-light);
+        }
+
+        .service-tabs__option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
+        .service-tabs__option--active {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .service-tabs__option:hover:not(.service-tabs__option--active) {
+            background-color: var(--color-light);
+            color: var(--color-primary);
+        }
+
+        .service-tabs__option:focus-within {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        /* Form rows */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+        }
+
+        /* Toggle optional */
+        .toggle-optional {
+            display: inline-flex;
+            align-items: center;
+            background: none;
+            border: none;
+            color: var(--color-primary);
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-weight: 600;
+            font-size: var(--fs-sm, 0.875rem);
+            cursor: pointer;
+            padding: var(--space-xs) 0;
+            transition: var(--transition);
+            min-height: 44px;
+        }
+
+        .toggle-optional:hover {
+            color: var(--color-accent);
+        }
+
+        .optional-fields {
+            margin-top: var(--space-md);
+        }
+
+        /* Estimate card */
+        .estimate-card {
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid var(--color-gray-light);
+            overflow: hidden;
+            transition: border-color var(--transition);
+        }
+
+        .estimate-card--price {
+            border-top-color: var(--color-brand-green);
+        }
+
+        .estimate-card--norate {
+            border-top-color: var(--color-primary);
+        }
+
+        .estimate-card--error {
+            border-top-color: #e6a817;
+        }
+
+        .estimate-card__header {
+            padding: var(--space-lg) var(--space-lg) 0;
+        }
+
+        .estimate-card__title {
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-size: var(--fs-md, 1.25rem);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .estimate-card__body {
+            padding: var(--space-lg);
+        }
+
+        .estimate-card__empty-state {
+            color: var(--color-gray);
+            font-size: var(--fs-sm, 0.875rem);
+            padding: var(--space-md) 0;
+        }
+
+        /* Spinner */
+        .calc-spinner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-xl) 0;
+        }
+
+        .calc-spinner__ring {
+            width: 40px;
+            height: 40px;
+            border: 4px solid var(--color-gray-light);
+            border-top-color: var(--color-brand-green);
+            border-radius: 50%;
+            animation: spinner-rotate 0.8s linear infinite;
+        }
+
+        @keyframes spinner-rotate {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .calc-spinner__ring {
+                animation: none;
+                border-top-color: var(--color-brand-green);
+                opacity: 0.6;
+            }
+        }
+
+        /* Price display */
+        .estimate-card__price {
+            display: flex;
+            align-items: baseline;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-xs);
+        }
+
+        .price-main {
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-size: var(--fs-xl, 1.953rem);
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1.1;
+        }
+
+        .estimate-card__currency {
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-size: var(--fs-md, 1.25rem);
+            font-weight: 600;
+            color: var(--color-gray);
+        }
+
+        .estimate-card__eur {
+            font-size: var(--fs-sm, 0.875rem);
+            color: var(--color-gray);
+            margin-bottom: var(--space-md);
+        }
+
+        .estimate-card__note {
+            font-size: var(--fs-xs, 0.8rem);
+            color: var(--color-gray);
+            font-style: italic;
+            margin-bottom: var(--space-lg);
+            line-height: 1.5;
+        }
+
+        /* Quote panel */
+        .quote-panel {
+            margin-top: var(--space-lg);
+            padding: var(--space-lg);
+            background-color: var(--color-light);
+            border-radius: 8px;
+            border: 1px solid var(--color-gray-light);
+        }
+
+        .quote-panel__title {
+            font-family: var(--font-heading, 'Inter', sans-serif);
+            font-size: var(--fs-md, 1.25rem);
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+        }
+
+        .quote-panel__summary {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-gray-light);
+            border-radius: 4px;
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--fs-sm, 0.875rem);
+            color: var(--color-gray);
+            margin-bottom: var(--space-lg);
+            line-height: 1.5;
+            word-break: break-word;
+        }
+
+        .quote-panel__success {
+            padding: var(--space-lg) 0;
+            color: var(--color-success);
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .quote-submit-error {
+            display: block;
+            margin-bottom: var(--space-sm);
+        }
+
+        /* Field error state */
+        .field--error {
+            border-color: var(--color-error) !important;
+        }
+
+        /* =============================================
+           Responsive
+           ============================================= */
+
+        /* Tablet */
+        @media (max-width: 1024px) {
+            .price-calculator__body {
+                gap: var(--space-lg);
+            }
+
+            .price-calculator__result {
+                position: static;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .price-calculator__body {
+                grid-template-columns: 1fr;
+            }
+
+            .price-calculator__result {
+                position: static;
+            }
+        }
+
+        /* Small mobile */
+        @media (max-width: 480px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .estimate-card__body {
+                padding: var(--space-md);
+            }
+
+            .quote-panel {
+                padding: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../../../bg/index.html" class="nav__logo">
+                <img src="../../../assets/logo3.png" alt="Rocket Logistic" class="nav__logo-img" width="150" height="50">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../../../bg/index.html#services" class="nav__link">Услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../../bg/index.html#about" class="nav__link">За нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../../../bg/index.html#contact" class="nav__link">Контакти</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#calculate" class="nav__link">Калкулатор Цени</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__actions">
+                <a href="../index.html" class="lang-toggle" aria-label="Switch to English">
+                    <span class="lang-toggle__text">EN</span>
+                </a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ================================================================
+             PRICE CALCULATOR SECTION
+             ================================================================ -->
+        <section class="price-calculator" id="calculate" aria-labelledby="calc-section-title">
+            <div class="container">
+
+                <h2 class="section__title" id="calc-section-title">&#1055;&#1086;&#1083;&#1091;&#1095;&#1077;&#1090;&#1077; &#1094;&#1077;&#1085;&#1086;&#1074;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;</h2>
+
+                <div class="price-calculator__body">
+
+                    <!-- ====================================================
+                         CALCULATOR FORM
+                         ==================================================== -->
+                    <form class="price-calculator__form" id="calc-form" novalidate aria-label="&#1050;&#1072;&#1083;&#1082;&#1091;&#1083;&#1072;&#1090;&#1086;&#1088; &#1085;&#1072; &#1094;&#1077;&#1085;&#1072; &#1079;&#1072; &#1090;&#1088;&#1072;&#1085;&#1089;&#1087;&#1086;&#1088;&#1090;">
+
+                        <!-- GROUP 1: Service Type -->
+                        <div class="calc-group">
+                            <div class="service-tabs" role="group" aria-labelledby="service-type-legend">
+                                <p id="service-type-legend" class="form-group" style="margin-bottom:0.5rem;">
+                                    <label id="label-service-type" style="display:block;font-family:var(--font-heading,'Inter',sans-serif);font-weight:600;margin-bottom:0.5rem;color:var(--color-primary);">
+                                        &#1042;&#1080;&#1076; &#1091;&#1089;&#1083;&#1091;&#1075;&#1072;
+                                    </label>
+                                </p>
+                                <div class="service-tabs__options">
+                                    <label class="service-tabs__option service-tabs__option--active" for="svc-ftl">
+                                        <input type="radio" id="svc-ftl" name="service_type" value="ftl" checked>
+                                        <span id="label-ftl">&#1055;&#1098;&#1083;&#1077;&#1085; &#1082;&#1072;&#1084;&#1080;&#1086;&#1085; (FTL)</span>
+                                    </label>
+                                    <label class="service-tabs__option" for="svc-ltl">
+                                        <input type="radio" id="svc-ltl" name="service_type" value="ltl">
+                                        <span id="label-ltl">&#1063;&#1072;&#1089;&#1090;&#1080;&#1095;&#1077;&#1085; &#1090;&#1086;&#1074;&#1072;&#1088; (LTL)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GROUP 2: Route Details -->
+                        <div class="calc-group">
+                            <div class="form-row">
+                                <!-- Origin country -->
+                                <div class="form-group">
+                                    <label id="label-origin-country" for="origin_country">&#1044;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;</label>
+                                    <select id="origin_country" name="origin_country" required aria-required="true" aria-label="&#1044;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;">
+                                        <option value="" disabled selected>&#1048;&#1079;&#1073;&#1077;&#1088;&#1077;&#1090;&#1077; &#1076;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072;</option>
+                                    </select>
+                                </div>
+
+                                <!-- Origin city -->
+                                <div class="form-group">
+                                    <label id="label-origin-city" for="origin_city_select">&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;</label>
+                                    <select id="origin_city_select" name="origin_city" aria-label="&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;" disabled>
+                                        <option value="" disabled selected>&#1048;&#1079;&#1073;&#1077;&#1088;&#1077;&#1090;&#1077; &#1075;&#1088;&#1072;&#1076; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        id="origin_city_text"
+                                        name="origin_city_text"
+                                        placeholder="&#1042;&#1098;&#1074;&#1077;&#1076;&#1077;&#1090;&#1077; &#1075;&#1088;&#1072;&#1076; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;"
+                                        aria-label="&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1090;&#1088;&#1098;&#1075;&#1074;&#1072;&#1085;&#1077;"
+                                        maxlength="100"
+                                        hidden
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <!-- Destination country -->
+                                <div class="form-group">
+                                    <label id="label-dest-country" for="destination_country">&#1044;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;</label>
+                                    <select id="destination_country" name="destination_country" required aria-required="true" aria-label="&#1044;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;">
+                                        <option value="" disabled selected>&#1048;&#1079;&#1073;&#1077;&#1088;&#1077;&#1090;&#1077; &#1076;&#1098;&#1088;&#1078;&#1072;&#1074;&#1072;</option>
+                                    </select>
+                                </div>
+
+                                <!-- Destination city -->
+                                <div class="form-group">
+                                    <label id="label-destination" for="destination_select">&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;</label>
+                                    <select id="destination_select" name="destination" aria-label="&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;" disabled>
+                                        <option value="" disabled selected>&#1048;&#1079;&#1073;&#1077;&#1088;&#1077;&#1090;&#1077; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;</option>
+                                    </select>
+                                    <input
+                                        type="text"
+                                        id="destination_text"
+                                        name="destination_text"
+                                        placeholder="&#1042;&#1098;&#1074;&#1077;&#1076;&#1077;&#1090;&#1077; &#1075;&#1088;&#1072;&#1076; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;"
+                                        aria-label="&#1043;&#1088;&#1072;&#1076; &#1085;&#1072; &#1076;&#1077;&#1089;&#1090;&#1080;&#1085;&#1072;&#1094;&#1080;&#1103;"
+                                        maxlength="100"
+                                        hidden
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GROUP 3a: LTL Cargo Details -->
+                        <div class="calc-group" id="ltl-fields" hidden aria-label="&#1054;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077; &#1085;&#1072; LTL &#1090;&#1086;&#1074;&#1072;&#1088;">
+
+                            <div class="form-row">
+                                <!-- Number of pallets -->
+                                <div class="form-group">
+                                    <label id="label-pallets" for="num_pallets">&#1041;&#1088;&#1086;&#1081; &#1087;&#1072;&#1083;&#1077;&#1090;&#1080;</label>
+                                    <input
+                                        type="number"
+                                        id="num_pallets"
+                                        name="num_pallets"
+                                        min="1"
+                                        max="33"
+                                        step="1"
+                                        placeholder="&#1085;&#1072;&#1087;&#1088;. 5"
+                                        aria-label="&#1041;&#1088;&#1086;&#1081; &#1087;&#1072;&#1083;&#1077;&#1090;&#1080;"
+                                        aria-describedby="num-pallets-hint"
+                                    >
+                                    <span id="num-pallets-hint" class="form-error" style="color:var(--color-gray);font-size:var(--fs-xs);">&#1052;&#1072;&#1082;&#1089;. 33 &#1087;&#1072;&#1083;&#1077;&#1090;&#1072;</span>
+                                </div>
+
+                                <!-- Total weight LTL -->
+                                <div class="form-group">
+                                    <label id="label-weight-ltl" for="total_weight_kg">&#1054;&#1073;&#1097;&#1086; &#1090;&#1077;&#1075;&#1083;&#1086; (&#1082;&#1075;)</label>
+                                    <input
+                                        type="number"
+                                        id="total_weight_kg"
+                                        name="total_weight_kg"
+                                        min="1"
+                                        step="1"
+                                        placeholder="&#1085;&#1072;&#1087;&#1088;. 1200"
+                                        aria-label="&#1054;&#1073;&#1097;&#1086; &#1090;&#1077;&#1075;&#1083;&#1086; &#1074; &#1082;&#1080;&#1083;&#1086;&#1075;&#1088;&#1072;&#1084;&#1080;"
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- Pallet type -->
+                            <div class="form-group" id="pallet-type-group">
+                                <label id="label-pallet-type" for="pallet_type">&#1042;&#1080;&#1076; &#1087;&#1072;&#1083;&#1077;&#1090;</label>
+                                <select id="pallet_type" name="pallet_type" aria-label="&#1042;&#1080;&#1076; &#1087;&#1072;&#1083;&#1077;&#1090;">
+                                    <option id="opt-eur-pallet" value="eur" selected>&#1045;&#1059;&#1056; &#1087;&#1072;&#1083;&#1077;&#1090; (120&times;80 &#1089;&#1084;)</option>
+                                    <option id="opt-ind-pallet" value="industrial">&#1048;&#1085;&#1076;&#1091;&#1089;&#1090;&#1088;&#1080;&#1072;&#1083;&#1077;&#1085; (120&times;100 &#1089;&#1084;)</option>
+                                </select>
+                            </div>
+
+                            <!-- Non-pallet checkbox -->
+                            <div class="form-group form-group--checkbox">
+                                <label class="checkbox-label" for="non_pallet_cargo">
+                                    <input type="checkbox" id="non_pallet_cargo" name="non_pallet_cargo">
+                                    <span id="label-non-pallet-span">&#1058;&#1086;&#1074;&#1072;&#1088;&#1098;&#1090; &#1085;&#1077; &#1077; &#1085;&#1072; &#1087;&#1072;&#1083;&#1077;&#1090;&#1080;</span>
+                                </label>
+                            </div>
+
+                            <!-- Dimension fields (shown when non-pallet checked) -->
+                            <div id="dim-fields" hidden>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label id="label-cargo-length" for="cargo_length_cm">&#1044;&#1098;&#1083;&#1078;&#1080;&#1085;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; (&#1089;&#1084;)</label>
+                                        <input
+                                            type="number"
+                                            id="cargo_length_cm"
+                                            name="cargo_length_cm"
+                                            min="1"
+                                            step="1"
+                                            placeholder="&#1085;&#1072;&#1087;&#1088;. 120"
+                                            aria-label="&#1044;&#1098;&#1083;&#1078;&#1080;&#1085;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; &#1074; &#1089;&#1072;&#1085;&#1090;&#1080;&#1084;&#1077;&#1090;&#1088;&#1080;"
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <label id="label-cargo-width" for="cargo_width_cm">&#1064;&#1080;&#1088;&#1080;&#1085;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; (&#1089;&#1084;)</label>
+                                        <input
+                                            type="number"
+                                            id="cargo_width_cm"
+                                            name="cargo_width_cm"
+                                            min="1"
+                                            step="1"
+                                            placeholder="&#1085;&#1072;&#1087;&#1088;. 120"
+                                            aria-label="&#1064;&#1080;&#1088;&#1080;&#1085;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; &#1074; &#1089;&#1072;&#1085;&#1090;&#1080;&#1084;&#1077;&#1090;&#1088;&#1080;"
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- GROUP 3b: FTL Cargo Details -->
+                        <div class="calc-group" id="ftl-fields" aria-label="&#1054;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077; &#1085;&#1072; FTL &#1090;&#1086;&#1074;&#1072;&#1088;">
+
+                            <div class="form-row">
+                                <!-- Cargo weight FTL -->
+                                <div class="form-group">
+                                    <label id="label-weight-ftl" for="cargo_weight_kg">&#1058;&#1077;&#1075;&#1083;&#1086; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; (&#1082;&#1075;)</label>
+                                    <input
+                                        type="number"
+                                        id="cargo_weight_kg"
+                                        name="cargo_weight_kg"
+                                        min="1"
+                                        step="1"
+                                        placeholder="&#1085;&#1072;&#1087;&#1088;. 12000"
+                                        aria-label="&#1058;&#1077;&#1075;&#1083;&#1086; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072; &#1074; &#1082;&#1080;&#1083;&#1086;&#1075;&#1088;&#1072;&#1084;&#1080;"
+                                    >
+                                </div>
+
+                                <!-- Truck type -->
+                                <div class="form-group">
+                                    <label id="label-truck-type" for="truck_type">&#1058;&#1080;&#1087; &#1082;&#1072;&#1084;&#1080;&#1086;&#1085;</label>
+                                    <select id="truck_type" name="truck_type" aria-label="&#1058;&#1080;&#1087; &#1082;&#1072;&#1084;&#1080;&#1086;&#1085;">
+                                        <option id="opt-curtainsider" value="standard" selected>&#1057;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1072; &#1090;&#1077;&#1085;&#1090;&#1086;&#1074;&#1072;</option>
+                                        <option id="opt-refrigerated" value="refrigerated">&#1061;&#1083;&#1072;&#1076;&#1080;&#1083;&#1085;&#1072;</option>
+                                        <option id="opt-flatbed" value="flatbed">&#1055;&#1083;&#1072;&#1090;&#1092;&#1086;&#1088;&#1084;&#1072;</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- OPTIONAL: Collapsed by default -->
+                        <div class="calc-group">
+                            <button
+                                type="button"
+                                class="toggle-optional"
+                                id="toggle-optional-btn"
+                                aria-expanded="false"
+                                aria-controls="optional-fields"
+                            >
+                                + &#1044;&#1086;&#1087;&#1098;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1085;&#1080; &#1087;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1086;&#1089;&#1090;&#1080;
+                            </button>
+                            <div class="optional-fields" id="optional-fields" hidden>
+                                <div class="form-row">
+                                    <!-- Load date -->
+                                    <div class="form-group">
+                                        <label id="label-load-date" for="load_date">&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;</label>
+                                        <input
+                                            type="date"
+                                            id="load_date"
+                                            name="load_date"
+                                            aria-label="&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;"
+                                        >
+                                    </div>
+
+                                    <!-- Date flexibility -->
+                                    <div class="form-group">
+                                        <label id="label-flexibility" style="display:block;font-family:var(--font-heading,'Inter',sans-serif);font-weight:600;margin-bottom:0.5rem;color:var(--color-primary);">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1086;&#1089;&#1090; &#1085;&#1072; &#1076;&#1072;&#1090;&#1072;&#1090;&#1072;</label>
+                                        <div role="group" aria-labelledby="label-flexibility" style="display:flex;gap:1.5rem;align-items:center;padding-top:0.5rem;">
+                                            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;font-weight:normal;min-height:44px;">
+                                                <input type="radio" name="date_flexibility" value="flexible" checked>
+                                                <span id="opt-flexible">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1072;</span>
+                                            </label>
+                                            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;font-weight:normal;min-height:44px;">
+                                                <input type="radio" name="date_flexibility" value="fixed">
+                                                <span id="opt-fixed">&#1060;&#1080;&#1082;&#1089;&#1080;&#1088;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072;</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Calculate button -->
+                        <div class="calc-group">
+                            <button
+                                type="button"
+                                class="btn btn--primary btn--full"
+                                id="btn-calculate"
+                            >
+                                Калкулирай
+                            </button>
+                        </div>
+
+                    </form><!-- /calc-form -->
+
+                    <!-- ====================================================
+                         ESTIMATE CARD (right column)
+                         ==================================================== -->
+                    <div class="price-calculator__result">
+
+                        <div
+                            class="estimate-card estimate-card--empty"
+                            id="estimate-card"
+                            aria-live="polite"
+                            aria-atomic="true"
+                            aria-label="&#1054;&#1094;&#1077;&#1085;&#1082;&#1072; &#1085;&#1072; &#1094;&#1077;&#1085;&#1072;&#1090;&#1072;"
+                        >
+                            <div class="estimate-card__header">
+                                <h3 class="estimate-card__title" id="estimate-label">&#1055;&#1088;&#1080;&#1073;&#1083;&#1080;&#1079;&#1080;&#1090;&#1077;&#1083;&#1085;&#1072; &#1094;&#1077;&#1085;&#1072;</h3>
+                            </div>
+
+                            <div class="estimate-card__body">
+
+                                <!-- State: empty -->
+                                <div class="estimate-card__empty-state" id="state-empty">
+                                    &#1055;&#1086;&#1087;&#1098;&#1083;&#1085;&#1077;&#1090;&#1077; &#1076;&#1072;&#1085;&#1085;&#1080;&#1090;&#1077; &#1087;&#1086;-&#1075;&#1086;&#1088;&#1077;, &#1079;&#1072; &#1076;&#1072; &#1074;&#1080;&#1076;&#1080;&#1090;&#1077; &#1086;&#1094;&#1077;&#1085;&#1082;&#1072;&#1090;&#1072;.
+                                </div>
+
+                                <!-- State: loading -->
+                                <div class="estimate-card__loading" id="state-loading" hidden>
+                                    <div class="calc-spinner" role="status" aria-label="&#1048;&#1079;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1080;&#1077; &#1085;&#1072; &#1094;&#1077;&#1085;&#1072;&#1090;&#1072;">
+                                        <div class="calc-spinner__ring"></div>
+                                    </div>
+                                </div>
+
+                                <!-- State: price found -->
+                                <div class="estimate-card__price-state" id="state-price" hidden>
+                                    <div class="estimate-card__price">
+                                        <span class="price-main" id="price-main"></span>
+                                    </div>
+                                    <div class="estimate-card__eur" id="price-eur"></div>
+                                    <p class="estimate-card__note" id="estimate-note">
+                                        &#1057;&#1072;&#1084;&#1086; &#1087;&#1088;&#1080;&#1073;&#1083;&#1080;&#1079;&#1080;&#1090;&#1077;&#1083;&#1085;&#1072; &#1086;&#1094;&#1077;&#1085;&#1082;&#1072;. &#1050;&#1088;&#1072;&#1081;&#1085;&#1072;&#1090;&#1072; &#1094;&#1077;&#1085;&#1072; &#1087;&#1086;&#1076;&#1083;&#1077;&#1078;&#1080; &#1085;&#1072; &#1087;&#1086;&#1090;&#1074;&#1098;&#1088;&#1078;&#1076;&#1077;&#1085;&#1080;&#1077;.
+                                    </p>
+                                    <button
+                                        type="button"
+                                        class="btn btn--primary btn--full"
+                                        id="btn-get-quote"
+                                        aria-expanded="false"
+                                        aria-controls="quote-panel"
+                                    >
+                                        &#1055;&#1086;&#1080;&#1089;&#1082;&#1072;&#1081;&#1090;&#1077; &#1086;&#1092;&#1080;&#1094;&#1080;&#1072;&#1083;&#1085;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;
+                                    </button>
+                                </div>
+
+                                <!-- State: no rate -->
+                                <div class="estimate-card__norate-state" id="state-norate" hidden>
+                                    <p id="norate-msg">&#1057;&#1074;&#1098;&#1088;&#1078;&#1077;&#1090;&#1077; &#1089;&#1077; &#1089; &#1085;&#1072;&#1089; &#1079;&#1072; &#1080;&#1085;&#1076;&#1080;&#1074;&#1080;&#1076;&#1091;&#1072;&#1083;&#1085;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;.</p>
+                                    <button
+                                        type="button"
+                                        class="btn btn--primary btn--full"
+                                        id="btn-get-quote-norate"
+                                        style="margin-top:var(--space-md);"
+                                        aria-expanded="false"
+                                        aria-controls="quote-panel"
+                                    >
+                                        &#1055;&#1086;&#1080;&#1089;&#1082;&#1072;&#1081;&#1090;&#1077; &#1086;&#1092;&#1080;&#1094;&#1080;&#1072;&#1083;&#1085;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;
+                                    </button>
+                                </div>
+
+                                <!-- State: error -->
+                                <div class="estimate-card__error-state" id="state-error" hidden>
+                                    <p id="error-msg">&#1053;&#1077; &#1084;&#1086;&#1078;&#1077; &#1076;&#1072; &#1089;&#1077; &#1080;&#1079;&#1095;&#1080;&#1089;&#1083;&#1080; &mdash; &#1084;&#1086;&#1083;&#1103; &#1089;&#1074;&#1098;&#1088;&#1078;&#1077;&#1090;&#1077; &#1089;&#1077; &#1089; &#1085;&#1072;&#1089;.</p>
+                                </div>
+
+                            </div><!-- /estimate-card__body -->
+                        </div><!-- /estimate-card -->
+
+                        <!-- ================================================
+                             QUOTE EXTENSION PANEL
+                             ================================================ -->
+                        <div class="quote-panel" id="quote-panel" hidden aria-label="&#1060;&#1086;&#1088;&#1084;&#1072; &#1079;&#1072; &#1079;&#1072;&#1103;&#1074;&#1082;&#1072; &#1085;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;">
+
+                            <h3 class="quote-panel__title" id="quote-panel-title">&#1047;&#1072;&#1103;&#1074;&#1077;&#1090;&#1077; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;</h3>
+
+                            <!-- Read-only cargo summary -->
+                            <div class="quote-panel__summary" id="quote-summary" aria-label="&#1054;&#1073;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1077; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072;" role="region"></div>
+
+                            <form class="quote-panel__form" id="quote-form" novalidate aria-label="&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1085;&#1080; &#1076;&#1072;&#1085;&#1085;&#1080; &#1079;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;">
+
+                                <!-- Name -->
+                                <div class="form-group">
+                                    <label id="label-qf-name" for="qf-name">&#1048;&#1084;&#1077;</label>
+                                    <input
+                                        type="text"
+                                        id="qf-name"
+                                        name="name"
+                                        placeholder="&#1042;&#1072;&#1096;&#1077;&#1090;&#1086; &#1087;&#1098;&#1083;&#1085;&#1086; &#1080;&#1084;&#1077;"
+                                        required
+                                        aria-required="true"
+                                        aria-label="&#1042;&#1072;&#1096;&#1077;&#1090;&#1086; &#1087;&#1098;&#1083;&#1085;&#1086; &#1080;&#1084;&#1077;"
+                                        maxlength="100"
+                                        autocomplete="name"
+                                    >
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label id="label-qf-email" for="qf-email">&#1048;&#1084;&#1077;&#1081;&#1083;</label>
+                                    <input
+                                        type="email"
+                                        id="qf-email"
+                                        name="email"
+                                        placeholder="&#1074;&#1072;&#1096;&#1080;&#1103;@&#1080;&#1084;&#1077;&#1081;&#1083;.com"
+                                        aria-label="&#1048;&#1084;&#1077;&#1081;&#1083; &#1072;&#1076;&#1088;&#1077;&#1089;"
+                                        autocomplete="email"
+                                    >
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="form-group">
+                                    <label id="label-qf-phone" for="qf-phone">&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;</label>
+                                    <input
+                                        type="tel"
+                                        id="qf-phone"
+                                        name="phone"
+                                        placeholder="+359 &hellip;"
+                                        aria-label="&#1058;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;&#1077;&#1085; &#1085;&#1086;&#1084;&#1077;&#1088;"
+                                        maxlength="50"
+                                        autocomplete="tel"
+                                    >
+                                    <span id="contact-hint" class="form-error" style="color:var(--color-gray);">
+                                        &#1052;&#1086;&#1083;&#1103; &#1074;&#1098;&#1074;&#1077;&#1076;&#1077;&#1090;&#1077; &#1087;&#1086;&#1085;&#1077; &#1080;&#1084;&#1077;&#1081;&#1083; &#1080;&#1083;&#1080; &#1090;&#1077;&#1083;&#1077;&#1092;&#1086;&#1085;.
+                                    </span>
+                                </div>
+
+                                <!-- Notes -->
+                                <div class="form-group">
+                                    <label id="label-qf-notes" for="qf-notes">&#1044;&#1086;&#1087;&#1098;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1085;&#1080; &#1073;&#1077;&#1083;&#1077;&#1078;&#1082;&#1080;</label>
+                                    <textarea
+                                        id="qf-notes"
+                                        name="notes"
+                                        rows="3"
+                                        placeholder="&#1057;&#1087;&#1077;&#1094;&#1080;&#1092;&#1080;&#1082;&#1080; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1072;, &#1089;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1085;&#1080; &#1080;&#1079;&#1080;&#1089;&#1082;&#1074;&#1072;&#1085;&#1080;&#1103;&hellip;"
+                                        aria-label="&#1044;&#1086;&#1087;&#1098;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1085;&#1080; &#1073;&#1077;&#1083;&#1077;&#1078;&#1082;&#1080;"
+                                        maxlength="500"
+                                    ></textarea>
+                                </div>
+
+                                <!-- Hidden fields -->
+                                <input type="hidden" id="qf-lang"      name="language">
+                                <input type="hidden" id="qf-min-price" name="shown_min_price">
+                                <input type="hidden" id="qf-max-price" name="shown_max_price">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn--primary btn--full"
+                                    id="btn-submit"
+                                >
+                                    &#1048;&#1079;&#1087;&#1088;&#1072;&#1090;&#1077;&#1090;&#1077; &#1079;&#1072;&#1103;&#1074;&#1082;&#1072; &#1079;&#1072; &#1086;&#1092;&#1077;&#1088;&#1090;&#1072;
+                                </button>
+
+                            </form>
+
+                            <!-- Success message (shown after submission) -->
+                            <div class="quote-panel__success" id="quote-success" hidden role="alert">
+                                <p>&#1041;&#1083;&#1072;&#1075;&#1086;&#1076;&#1072;&#1088;&#1080;&#1084;! &#1065;&#1077; &#1089;&#1077; &#1089;&#1074;&#1098;&#1088;&#1078;&#1077;&#1084; &#1089; &#1074;&#1072;&#1089; &#1089;&#1082;&#1086;&#1088;&#1086;.</p>
+                            </div>
+
+                        </div><!-- /quote-panel -->
+
+                    </div><!-- /price-calculator__result -->
+
+                </div><!-- /price-calculator__body -->
+
+            </div><!-- /container -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="../../../assets/R logo with white letters.png" alt="Rocket Logistic" class="footer__logo-img" width="240" height="80">
+                    </div>
+                    <p class="footer__tagline">Вашият надежден партньор</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Бързи връзки</h4>
+                    <ul>
+                        <li><a href="../../../bg/index.html#services">Услуги</a></li>
+                        <li><a href="../../../bg/index.html#about">За нас</a></li>
+                        <li><a href="../../../bg/index.html#contact">Контакти</a></li>
+                        <li><a href="#calculate">Калкулатор Цени</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__social">
+                    <h4>Последвайте ни</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Rocket Logistic. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top" aria-label="Нагоре">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="../js/calculator.js"></script>
+    <script>
+        // Enable city selects once countries are populated
+        document.addEventListener('DOMContentLoaded', function () {
+            var originCountry = document.getElementById('origin_country');
+            var originCitySelect = document.getElementById('origin_city_select');
+            var destCountry = document.getElementById('destination_country');
+            var destCitySelect = document.getElementById('destination_select');
+
+            if (originCountry) {
+                originCountry.addEventListener('change', function () {
+                    if (this.value) originCitySelect.removeAttribute('disabled');
+                    else originCitySelect.setAttribute('disabled', '');
+                });
+            }
+            if (destCountry) {
+                destCountry.addEventListener('change', function () {
+                    if (this.value) destCitySelect.removeAttribute('disabled');
+                    else destCitySelect.setAttribute('disabled', '');
+                });
+            }
+        });
+
+        // Mobile Navigation
+        var navToggle = document.getElementById('nav-toggle');
+        var navMenu = document.getElementById('nav-menu');
+        var navLinks = document.querySelectorAll('.nav__link');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', function() {
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            });
+        }
+
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (navToggle) {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Scroll to Top
+        var scrollTop = document.getElementById('scroll-top');
+        if (scrollTop) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollTop.classList.add('visible');
+                } else {
+                    scrollTop.classList.remove('visible');
+                }
+            });
+            scrollTop.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    </script>
+
+</body>
+</html>
