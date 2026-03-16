@@ -2466,5 +2466,11 @@
   "bucharest|sofia|ro|bg": 348.0,
   "sofia|bucharest|bg|ro": 348.0,
   "valencia|konya|es|tr": 3910.8,
-  "konya|valencia|tr|es": 3910.8
+  "konya|valencia|tr|es": 3910.8,
+  "bucharest|lublin|ro|pl": 1032.7,
+  "lublin|bucharest|pl|ro": 1032.7,
+  "bucharest|patras|ro|gr": 1111.3,
+  "patras|bucharest|gr|ro": 1111.3,
+  "bucharest|cluj-napoca|ro|ro": 462.5,
+  "cluj-napoca|bucharest|ro|ro": 462.5
 }

@@ -108,7 +108,7 @@ const STRINGS = {
     placeholder_pallets:      '\u043d\u0430\u043f\u0440. 5',
     label_weight_ltl:         '\u041e\u0431\u0449\u043e \u0442\u0435\u0433\u043b\u043e (\u043a\u0433)',
     label_pallet_type:        '\u0412\u0438\u0434 \u043f\u0430\u043b\u0435\u0442',
-    opt_eur_pallet:           '\u0415\u0423\u0420 \u043f\u0430\u043b\u0435\u0442 (120\u00d780 \u0441\u043c)',
+    opt_eur_pallet:           '\u0415\u0412\u0420\u041e \u043f\u0430\u043b\u0435\u0442 (120\u00d780 \u0441\u043c)',
     opt_ind_pallet:           '\u0418\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0430\u043b\u0435\u043d (120\u00d7100 \u0441\u043c)',
     label_non_pallet:         '\u0422\u043e\u0432\u0430\u0440\u044a\u0442 \u043d\u0435 \u0435 \u043d\u0430 \u043f\u0430\u043b\u0435\u0442\u0438',
     label_cargo_length:       '\u0414\u044a\u043b\u0436\u0438\u043d\u0430 \u043d\u0430 \u0442\u043e\u0432\u0430\u0440\u0430 (\u0441\u043c)',
@@ -471,7 +471,7 @@ let calcForm, estimateCard, quotePanel, quoteSummary, quoteForm, quoteSuccess;
 let originCountrySelect, originCitySelect, originCityText;
 let destCountrySelect,   destCitySelect,   destCityText;
 let ftlFields, ltlFields;
-let nonPalletCheckbox, palletTypeGroup, dimFields;
+let palletTypeGroup, dimFields;
 let toggleOptionalBtn, optionalFields;
 let btnCalculate, btnGetQuote, btnGetQuoteNorate, btnSubmit;
 
@@ -513,7 +513,6 @@ function bindDOMRefs() {
   ftlFields          = document.getElementById('ftl-fields');
   ltlFields          = document.getElementById('ltl-fields');
 
-  nonPalletCheckbox  = document.getElementById('non_pallet_cargo');
   palletTypeGroup    = document.getElementById('pallet-type-group');
   dimFields          = document.getElementById('dim-fields');
 
@@ -766,8 +765,8 @@ function attachEventListeners() {
     calcForm.addEventListener('change', onInputChange);
   }
 
-  // Non-pallet checkbox
-  if (nonPalletCheckbox) nonPalletCheckbox.addEventListener('change', onNonPalletChange);
+  // Pallet type radios
+  document.querySelectorAll('input[name="pallet_type"]').forEach(r => r.addEventListener('change', onNonPalletChange));
 
   // Optional toggle
   if (toggleOptionalBtn) toggleOptionalBtn.addEventListener('click', onToggleOptional);
@@ -845,18 +844,25 @@ function onDestCountryChange() {
 }
 
 // ---------------------------------------------------------------------------
-// 13. Non-pallet cargo checkbox
+// 13. Pallet type radio change
 // ---------------------------------------------------------------------------
 function onNonPalletChange() {
-  const checked = nonPalletCheckbox.checked;
-  if (palletTypeGroup) palletTypeGroup.hidden = checked;
-  if (dimFields)       dimFields.hidden       = !checked;
+  const selected = document.querySelector('input[name="pallet_type"]:checked');
+  const isNonPallet = selected && selected.value === 'non_pallet';
+  if (dimFields) dimFields.hidden = !isNonPallet;
+
+  // Lock/unlock number of pallets field
+  const numPalletsEl = document.getElementById('num_pallets');
+  if (numPalletsEl) {
+    numPalletsEl.disabled = isNonPallet;
+    if (isNonPallet) numPalletsEl.value = '';
+  }
 
   // Toggle required on dimension fields
   const lenEl = document.getElementById('cargo_length_cm');
   const widEl = document.getElementById('cargo_width_cm');
-  if (lenEl) { checked ? lenEl.setAttribute('required', '') : lenEl.removeAttribute('required'); }
-  if (widEl) { checked ? widEl.setAttribute('required', '') : widEl.removeAttribute('required'); }
+  if (lenEl) { isNonPallet ? lenEl.setAttribute('required', '') : lenEl.removeAttribute('required'); }
+  if (widEl) { isNonPallet ? widEl.setAttribute('required', '') : widEl.removeAttribute('required'); }
 
   onInputChange();
 }
@@ -908,10 +914,11 @@ function getCityDisplayName(countryCode, cityEnValue) {
 
 function collectFormData() {
   const isLtl = currentServiceType === 'ltl';
-  const isNonPallet = nonPalletCheckbox ? nonPalletCheckbox.checked : false;
+  const palletRadio    = document.querySelector('input[name="pallet_type"]:checked');
+  const palletRadioVal = palletRadio ? palletRadio.value : 'eur';
+  const isNonPallet    = palletRadioVal === 'non_pallet';
 
   const truckTypeEl    = document.getElementById('truck_type');
-  const palletTypeEl   = document.getElementById('pallet_type');
   const numPalletsEl   = document.getElementById('num_pallets');
   const weightLtlEl   = document.getElementById('total_weight_kg');
   const cargoLengthEl  = document.getElementById('cargo_length_cm');
@@ -928,7 +935,7 @@ function collectFormData() {
     destination:          getDestCity(),
     num_pallets:          isLtl && !isNonPallet && numPalletsEl  ? (parseInt(numPalletsEl.value, 10)  || null) : null,
     total_weight_kg:      isLtl && weightLtlEl  ? (parseFloat(weightLtlEl.value)  || null) : null,
-    pallet_type:          isLtl && !isNonPallet && palletTypeEl  ? (palletTypeEl.value || 'eur')    : null,
+    pallet_type:          isLtl && !isNonPallet ? palletRadioVal : null,
     non_pallet_cargo:     isLtl ? isNonPallet : false,
     cargo_length_cm:      isLtl && isNonPallet && cargoLengthEl  ? (parseInt(cargoLengthEl.value, 10) || null) : null,
     cargo_width_cm:       isLtl && isNonPallet && cargoWidthEl   ? (parseInt(cargoWidthEl.value, 10)  || null) : null,

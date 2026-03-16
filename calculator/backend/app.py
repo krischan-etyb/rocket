@@ -65,9 +65,10 @@ logger = logging.getLogger("rocket_logistic")
 # Flask app
 # ---------------------------------------------------------------------------
 _FRONTEND_DIR = _BACKEND_DIR.parent / "frontend"
+_PROJECT_ROOT = _BACKEND_DIR.parent.parent
 app = Flask(
     __name__,
-    static_folder=str(_FRONTEND_DIR),
+    static_folder=str(_PROJECT_ROOT),
     static_url_path="",
 )
 app.secret_key = Config.SECRET_KEY
@@ -182,6 +183,53 @@ def save_quote_to_csv(data: dict[str, Any]) -> None:
         if write_header:
             writer.writeheader()
         writer.writerow({k: data.get(k, "") for k in _QUOTE_CSV_FIELDS})
+
+
+_CALC_CSV_FIELDS = [
+    "timestamp", "service_type", "route_type",
+    "origin_country", "origin_city",
+    "destination_country", "destination",
+    "num_pallets", "total_weight_kg", "pallet_type",
+    "non_pallet_cargo", "cargo_length_cm", "cargo_width_cm",
+    "cargo_weight_kg", "truck_type",
+    "load_date", "date_flexibility",
+    "distance_km", "min_price", "max_price", "no_rate",
+    "language", "ip",
+]
+
+
+def save_calculation_to_json(data: dict[str, Any]) -> None:
+    """Append data as a JSON object to calculations.json."""
+    _ensure_submissions_dir()
+    path = Path(Config.CALCULATIONS_JSON)
+    existing: list[dict] = []
+
+    if path.is_file():
+        try:
+            with path.open(encoding="utf-8") as fh:
+                existing = json.load(fh)
+            if not isinstance(existing, list):
+                existing = []
+        except (json.JSONDecodeError, OSError):
+            existing = []
+
+    existing.append(data)
+
+    with path.open("w", encoding="utf-8") as fh:
+        json.dump(existing, fh, ensure_ascii=False, indent=2)
+
+
+def save_calculation_to_csv(data: dict[str, Any]) -> None:
+    """Append data as a row to calculations.csv."""
+    _ensure_submissions_dir()
+    path = Path(Config.CALCULATIONS_CSV)
+    write_header = not path.is_file()
+
+    with path.open("a", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=_CALC_CSV_FIELDS, extrasaction="ignore")
+        if write_header:
+            writer.writeheader()
+        writer.writerow({k: data.get(k, "") for k in _CALC_CSV_FIELDS})
 
 
 def save_contact_to_json(data: dict[str, Any]) -> None:
@@ -431,30 +479,43 @@ def health() -> tuple[Response, int]:
 
 
 @app.route("/", methods=["GET"])
-def serve_frontend() -> Response:
-    frontend_path = _FRONTEND_DIR / "index.html"
-    if not frontend_path.is_file():
+def serve_main() -> Response:
+    path = _PROJECT_ROOT / "index.html"
+    if not path.is_file():
         return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(frontend_path))
-
-
-@app.before_request
-def serve_shared_assets() -> Response | None:
-    """Intercept /assets/ requests and serve from the project root assets dir."""
-    if request.path.startswith("/assets/"):
-        filename = request.path[len("/assets/"):]
-        assets_dir = _BACKEND_DIR.parent.parent / "assets"
-        return send_from_directory(str(assets_dir), filename)
-    return None
+    return send_file(str(path))
 
 
 @app.route("/bg/", methods=["GET"])
 @app.route("/bg", methods=["GET"])
-def serve_frontend_bg() -> Response:
-    frontend_path = _FRONTEND_DIR / "bg" / "index.html"
-    if not frontend_path.is_file():
+def serve_main_bg() -> Response:
+    path = _PROJECT_ROOT / "bg" / "index.html"
+    if not path.is_file():
         return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(frontend_path))
+    return send_file(str(path))
+
+
+@app.route("/calculator/", methods=["GET"])
+@app.route("/calculator", methods=["GET"])
+def serve_calculator() -> Response:
+    path = _FRONTEND_DIR / "index.html"
+    if not path.is_file():
+        return jsonify({"error": "Frontend not found"}), 404
+    return send_file(str(path))
+
+
+@app.route("/calculator/bg/", methods=["GET"])
+@app.route("/calculator/bg", methods=["GET"])
+def serve_calculator_bg() -> Response:
+    path = _FRONTEND_DIR / "bg" / "index.html"
+    if not path.is_file():
+        return jsonify({"error": "Frontend not found"}), 404
+    return send_file(str(path))
+
+
+@app.route("/calculator/<path:filename>", methods=["GET"])
+def serve_calculator_static(filename: str) -> Response:
+    return send_from_directory(str(_FRONTEND_DIR), filename)
 
 
 @app.route("/api/calculate", methods=["POST"])
@@ -480,7 +541,27 @@ def api_calculate() -> tuple[Response, int]:
         body.get("destination", ""),
         body.get("destination_country", ""),
     )
+
+    route_type = _derive_route_type(body)
+    ts = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+
     if dist is None:
+        calc_record: dict[str, Any] = {
+            **body,
+            "route_type": route_type,
+            "distance_km": "",
+            "min_price": "",
+            "max_price": "",
+            "no_rate": True,
+            "timestamp": ts,
+            "ip": ip,
+        }
+        try:
+            save_calculation_to_json(calc_record)
+            save_calculation_to_csv(calc_record)
+        except OSError as exc:
+            logger.error("Failed to persist calculation: %s", exc)
+
         return jsonify({
             "success": True,
             "no_rate": True,
@@ -497,6 +578,22 @@ def api_calculate() -> tuple[Response, int]:
             "Възникна грешка при изчисляването на цената.",
             500,
         )
+
+    calc_record = {
+        **body,
+        "route_type": route_type,
+        "distance_km": dist,
+        "min_price": result.get("min_price", ""),
+        "max_price": result.get("max_price", ""),
+        "no_rate": False,
+        "timestamp": ts,
+        "ip": ip,
+    }
+    try:
+        save_calculation_to_json(calc_record)
+        save_calculation_to_csv(calc_record)
+    except OSError as exc:
+        logger.error("Failed to persist calculation: %s", exc)
 
     return jsonify(result), 200
 

@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
     height: 100%;
 }
 
@@ -179,6 +179,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     width: auto;
     object-fit: contain;
+}
+
+.nav__menu {
+    margin-left: auto;
 }
 
 .nav__list {
@@ -207,6 +211,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:hover::after {
     width: 100%;
+}
+
+@keyframes heartbeat {
+    0% {
+        box-shadow: 0 0 0 0 var(--color-brand-green);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 0 7px transparent;
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 0 0 transparent;
+        transform: scale(1);
+    }
+}
+
+.nav__link--calculator {
+    background-color: var(--color-brand-green);
+    color: var(--color-white) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.nav__link--calculator::after {
+    display: none;
+}
+
+.nav__link--calculator:hover {
+    background-color: var(--color-brand-green-dark);
 }
 
 .nav__actions {

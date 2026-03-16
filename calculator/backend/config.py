@@ -30,6 +30,9 @@ class Config:
     QUOTES_JSON: ClassVar[str] = os.path.join(SUBMISSIONS_DIR, "quotes.json")
     QUOTES_CSV: ClassVar[str] = os.path.join(SUBMISSIONS_DIR, "quotes.csv")
 
+    CALCULATIONS_JSON: ClassVar[str] = os.path.join(SUBMISSIONS_DIR, "calculations.json")
+    CALCULATIONS_CSV: ClassVar[str] = os.path.join(SUBMISSIONS_DIR, "calculations.csv")
+
     PRICES_FILE: ClassVar[str] = os.getenv(
         "PRICES_FILE", os.path.join(BASE_DIR, "prices.json")
     )

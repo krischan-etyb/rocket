@@ -333,29 +333,29 @@
     <!-- Header / Navigation -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="../../index.html" class="nav__logo">
+            <a href="/" class="nav__logo">
                 <img src="../../assets/logo3.png" alt="Rocket Logistic" class="nav__logo-img" width="150" height="50">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="../../index.html#services" class="nav__link">Services</a>
+                        <a href="/#services" class="nav__link">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../../index.html#about" class="nav__link">About</a>
+                        <a href="/#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../../index.html#contact" class="nav__link">Contact</a>
+                        <a href="/#contact" class="nav__link">Contact</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#calculate" class="nav__link">Price Calculator</a>
+                        <a href="#calculate" class="nav__link nav__link--calculator">Price Calculator</a>
                     </li>
                 </ul>
             </div>
 
             <div class="nav__actions">
-                <a href="bg/index.html" class="lang-toggle" aria-label="Превключи на български">
+                <a href="/calculator/bg/" class="lang-toggle" aria-label="Превключи на български">
                     <span class="lang-toggle__text">BG</span>
                 </a>
                 <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
@@ -503,19 +503,24 @@
 
                             <!-- Pallet type -->
                             <div class="form-group" id="pallet-type-group">
-                                <label id="label-pallet-type" for="pallet_type">Pallet type</label>
-                                <select id="pallet_type" name="pallet_type" aria-label="Pallet type">
-                                    <option id="opt-eur-pallet" value="eur" selected>EUR pallet (120&times;80 cm)</option>
-                                    <option id="opt-ind-pallet" value="industrial">Industrial (120&times;100 cm)</option>
-                                </select>
-                            </div>
-
-                            <!-- Non-pallet checkbox -->
-                            <div class="form-group form-group--checkbox">
-                                <label class="checkbox-label" for="non_pallet_cargo">
-                                    <input type="checkbox" id="non_pallet_cargo" name="non_pallet_cargo">
-                                    <span id="label-non-pallet-span">Cargo is not on pallets</span>
-                                </label>
+                                <label id="label-pallet-type">Pallet type</label>
+                                <div class="pallet-type-options">
+                                    <label class="checkbox-label">
+                                        <input type="radio" id="pallet_eur" name="pallet_type" value="eur" checked>
+                                        <span class="checkbox-box"></span>
+                                        <span id="opt-eur-pallet">EUR pallet (120&times;80 cm)</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="radio" id="pallet_industrial" name="pallet_type" value="industrial">
+                                        <span class="checkbox-box"></span>
+                                        <span id="opt-ind-pallet">Industrial pallet (120&times;100 cm)</span>
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="radio" id="pallet_non" name="pallet_type" value="non_pallet">
+                                        <span class="checkbox-box"></span>
+                                        <span id="label-non-pallet-span">Cargo not on pallet</span>
+                                    </label>
+                                </div>
                             </div>
 
                             <!-- Dimension fields (shown when non-pallet checked) -->
@@ -593,7 +598,7 @@
                                 + Optional details
                             </button>
                             <div class="optional-fields" id="optional-fields" hidden>
-                                <div class="form-row">
+                                <div class="form-row date-flexibility-row">
                                     <!-- Load date -->
                                     <div class="form-group">
                                         <label id="label-load-date" for="load_date">Desired load date</label>
@@ -607,14 +612,16 @@
 
                                     <!-- Date flexibility -->
                                     <div class="form-group">
-                                        <label id="label-flexibility" as="fieldset-legend" style="display:block;font-family:var(--font-heading,'Inter',sans-serif);font-weight:600;margin-bottom:0.5rem;color:var(--color-primary);">Date flexibility</label>
-                                        <div role="group" aria-labelledby="label-flexibility" style="display:flex;gap:1.5rem;align-items:center;padding-top:0.5rem;">
-                                            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;font-weight:normal;min-height:44px;">
+                                        <label id="label-flexibility">Date flexibility</label>
+                                        <div class="pallet-type-options" role="group" aria-labelledby="label-flexibility">
+                                            <label class="checkbox-label">
                                                 <input type="radio" name="date_flexibility" value="flexible" checked>
+                                                <span class="checkbox-box"></span>
                                                 <span id="opt-flexible">Flexible</span>
                                             </label>
-                                            <label style="display:flex;align-items:center;gap:0.5rem;cursor:pointer;font-weight:normal;min-height:44px;">
+                                            <label class="checkbox-label">
                                                 <input type="radio" name="date_flexibility" value="fixed">
+                                                <span class="checkbox-box"></span>
                                                 <span id="opt-fixed">Fixed date</span>
                                             </label>
                                         </div>
@@ -824,9 +831,9 @@
                 <div class="footer__links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="../../index.html#services">Services</a></li>
-                        <li><a href="../../index.html#about">About</a></li>
-                        <li><a href="../../index.html#contact">Contact</a></li>
+                        <li><a href="/#services">Services</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#contact">Contact</a></li>
                         <li><a href="#calculate">Price Calculator</a></li>
                     </ul>
                 </div>
