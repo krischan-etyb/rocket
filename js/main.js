@@ -166,7 +166,7 @@
                 submitButton.textContent = 'Sending...';
 
                 // API endpoint - update for production
-                const apiUrl = 'http://localhost:5000/api/contact';
+                const apiUrl = '/api/contact';
 
                 // Send POST request to backend
                 fetch(apiUrl, {

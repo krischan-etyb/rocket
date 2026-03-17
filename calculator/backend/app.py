@@ -478,47 +478,7 @@ def health() -> tuple[Response, int]:
     return jsonify({"status": "ok"}), 200
 
 
-@app.route("/", methods=["GET"])
-def serve_main() -> Response:
-    path = _PROJECT_ROOT / "index.html"
-    if not path.is_file():
-        return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(path))
-
-
-@app.route("/bg/", methods=["GET"])
-@app.route("/bg", methods=["GET"])
-def serve_main_bg() -> Response:
-    path = _PROJECT_ROOT / "bg" / "index.html"
-    if not path.is_file():
-        return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(path))
-
-
-@app.route("/calculator/", methods=["GET"])
-@app.route("/calculator", methods=["GET"])
-def serve_calculator() -> Response:
-    path = _FRONTEND_DIR / "index.html"
-    if not path.is_file():
-        return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(path))
-
-
-@app.route("/calculator/bg/", methods=["GET"])
-@app.route("/calculator/bg", methods=["GET"])
-def serve_calculator_bg() -> Response:
-    path = _FRONTEND_DIR / "bg" / "index.html"
-    if not path.is_file():
-        return jsonify({"error": "Frontend not found"}), 404
-    return send_file(str(path))
-
-
-@app.route("/calculator/<path:filename>", methods=["GET"])
-def serve_calculator_static(filename: str) -> Response:
-    return send_from_directory(str(_FRONTEND_DIR), filename)
-
-
-@app.route("/api/calculate", methods=["POST"])
+@app.route("/calculate", methods=["POST"])
 def api_calculate() -> tuple[Response, int]:
     """Return a stateless price estimate."""
     ip = _get_client_ip()
@@ -598,7 +558,7 @@ def api_calculate() -> tuple[Response, int]:
     return jsonify(result), 200
 
 
-@app.route("/api/quote", methods=["POST"])
+@app.route("/quote", methods=["POST"])
 def api_quote() -> tuple[Response, int]:
     """Save a quote request and send confirmation emails."""
     ip = _get_client_ip()
@@ -701,7 +661,7 @@ def api_quote() -> tuple[Response, int]:
     return jsonify(response_payload), 200
 
 
-@app.route("/api/contact", methods=["POST"])
+@app.route("/contact", methods=["POST"])
 def api_contact() -> tuple[Response, int]:
     """Handle a contact-form submission."""
     ip = _get_client_ip()

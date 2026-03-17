@@ -154,7 +154,7 @@
                 submitButton.disabled = true;
                 submitButton.textContent = 'Изпращане...';
 
-                const apiUrl = 'http://localhost:5000/api/contact';
+                const apiUrl = '/api/contact';
 
                 fetch(apiUrl, {
                     method: 'POST',
