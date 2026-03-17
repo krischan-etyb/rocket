@@ -7,7 +7,6 @@ POST /api/calculate   Stateless price estimate (rate-limited to 60/hr per IP).
 POST /api/quote       Save quote + send confirmation emails (5/hr per IP).
 POST /api/contact     Contact-form submission (5/hr per IP).
 GET  /health          Liveness probe.
-GET  /                Serves ../frontend/index.html.
 
 Run with::
 
@@ -478,7 +477,7 @@ def health() -> tuple[Response, int]:
     return jsonify({"status": "ok"}), 200
 
 
-@app.route("/calculate", methods=["POST"])
+@app.route("/api/calculate", methods=["POST"])
 def api_calculate() -> tuple[Response, int]:
     """Return a stateless price estimate."""
     ip = _get_client_ip()
@@ -558,7 +557,7 @@ def api_calculate() -> tuple[Response, int]:
     return jsonify(result), 200
 
 
-@app.route("/quote", methods=["POST"])
+@app.route("/api/quote", methods=["POST"])
 def api_quote() -> tuple[Response, int]:
     """Save a quote request and send confirmation emails."""
     ip = _get_client_ip()
@@ -661,7 +660,7 @@ def api_quote() -> tuple[Response, int]:
     return jsonify(response_payload), 200
 
 
-@app.route("/contact", methods=["POST"])
+@app.route("/api/contact", methods=["POST"])
 def api_contact() -> tuple[Response, int]:
     """Handle a contact-form submission."""
     ip = _get_client_ip()
