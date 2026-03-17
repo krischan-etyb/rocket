@@ -2,10 +2,8 @@
 # This ensures Flask handles routing for /calculator/bg/, /api/*, etc.
 
 PassengerEnabled on
-PassengerAppRoot /home/YOUR_JETHOST_USERNAME/public_html
-
-# If your Python is in a virtualenv, uncomment and adjust:
-# PassengerPython /home/YOUR_JETHOST_USERNAME/virtualenv/python3.10/bin/python3
+PassengerAppRoot /home/xqyvotdh/repositories/rocket1
+PassengerPython /home/xqyvotdh/virtualenv/repositories/rocket1/3.13/bin/python3
 
 # Redirect www to non-www (optional, uncomment if needed)
 # RewriteEngine On
