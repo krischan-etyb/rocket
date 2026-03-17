@@ -474,7 +474,16 @@ def _derive_route_type(data: dict[str, Any]) -> str:
 
 @app.route("/health", methods=["GET"])
 def health() -> tuple[Response, int]:
-    return jsonify({"status": "ok"}), 200
+    has_api_key = bool(distance_service._api_key)
+    import distance_service as _ds_mod
+    has_requests = _ds_mod.requests is not None
+    cache_count = len(distance_service._cache)
+    return jsonify({
+        "status": "ok",
+        "ors_api_key_set": has_api_key,
+        "requests_library": has_requests,
+        "cache_entries": cache_count,
+    }), 200
 
 
 @app.route("/api/calculate", methods=["POST"])

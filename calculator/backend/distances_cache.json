@@ -2472,5 +2472,7 @@
   "bucharest|patras|ro|gr": 1111.3,
   "patras|bucharest|gr|ro": 1111.3,
   "bucharest|cluj-napoca|ro|ro": 462.5,
-  "cluj-napoca|bucharest|ro|ro": 462.5
+  "cluj-napoca|bucharest|ro|ro": 462.5,
+  "sofia|munich|bg|de": 1345.8,
+  "munich|sofia|de|bg": 1345.8
 }

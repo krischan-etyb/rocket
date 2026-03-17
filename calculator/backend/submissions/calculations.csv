@@ -1,0 +1,2 @@
+timestamp,service_type,route_type,origin_country,origin_city,destination_country,destination,num_pallets,total_weight_kg,pallet_type,non_pallet_cargo,cargo_length_cm,cargo_width_cm,cargo_weight_kg,truck_type,load_date,date_flexibility,distance_km,min_price,max_price,no_rate,language,ip
+2026-03-17 11:34:47 UTC,ftl,international,BG,Sofia,DE,Munich,,,,,,,5000,standard,,flexible,1345.8,1816,2311,False,en,127.0.0.1
