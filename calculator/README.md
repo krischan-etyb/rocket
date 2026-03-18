@@ -159,7 +159,7 @@ SMTP_HOST=smtp.example.com
 SMTP_PORT=587
 SMTP_USER=your-smtp-user@example.com
 SMTP_PASSWORD=your-smtp-password
-COMPANY_EMAIL=info@rocketlogistic.bg
+COMPANY_EMAIL=office@r-logistic.com
 EMAIL_FROM=noreply@rocketlogistic.bg
 
 # Paths (optional — defaults shown)

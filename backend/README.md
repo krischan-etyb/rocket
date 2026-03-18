@@ -50,7 +50,7 @@ SENDGRID_API_KEY=your-sendgrid-api-key-here
 # MAILGUN_DOMAIN=your-domain.mailgun.org
 
 # Company email
-COMPANY_EMAIL=info@rocketlogistic.bg
+COMPANY_EMAIL=office@r-logistic.com
 
 # CORS origins (comma-separated)
 ALLOWED_ORIGINS=http://localhost:5500,http://127.0.0.1:5500
@@ -223,7 +223,7 @@ heroku create your-app-name
 
 # Set environment variables
 heroku config:set SENDGRID_API_KEY=your-key
-heroku config:set COMPANY_EMAIL=info@rocketlogistic.bg
+heroku config:set COMPANY_EMAIL=office@r-logistic.com
 heroku config:set ALLOWED_ORIGINS=https://rocketlogistic.bg
 
 # Deploy
@@ -303,4 +303,4 @@ For issues or questions:
 - Check logs for error messages
 - Verify `.env` configuration
 - Test email service separately
-- Contact: info@rocketlogistic.bg
+- Contact: office@r-logistic.com

@@ -26,7 +26,7 @@ class Config:
     MAILGUN_DOMAIN = os.getenv('MAILGUN_DOMAIN', '')
 
     # Company information
-    COMPANY_EMAIL = os.getenv('COMPANY_EMAIL', 'info@rocketlogistic.bg')
+    COMPANY_EMAIL = os.getenv('COMPANY_EMAIL', 'office@r-logistic.com')
     COMPANY_NAME = os.getenv('COMPANY_NAME', 'Rocket Logistic')
 
     # CORS configuration

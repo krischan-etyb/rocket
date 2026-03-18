@@ -64,7 +64,7 @@ class Config:
     MAIL_USERNAME: ClassVar[str] = os.getenv("MAIL_USERNAME", "")
     MAIL_PASSWORD: ClassVar[str] = os.getenv("MAIL_PASSWORD", "")
     COMPANY_EMAIL: ClassVar[str] = os.getenv(
-        "COMPANY_EMAIL", "info@rocketlogistic.bg"
+        "COMPANY_EMAIL", "office@r-logistic.com"
     )
 
     # ---------------------------------------------------------------------------

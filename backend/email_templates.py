@@ -215,13 +215,13 @@ def get_customer_confirmation_template(data, language='en'):
                     </ul>
 
                     <div class="cta">
-                        <a href="mailto:info@rocketlogistic.bg" class="button">Свържете се с нас</a>
+                        <a href="mailto:office@r-logistic.com" class="button">Свържете се с нас</a>
                     </div>
                 </div>
                 <div class="footer">
                     <p><strong>Rocket Logistic</strong></p>
                     <p>бул. "Цариградско шосе" 115, София 1784, България</p>
-                    <p>Телефон: +359 2 812 3456 | Email: info@rocketlogistic.bg</p>
+                    <p>Телефон: +359 2 812 3456 | Email: office@r-logistic.com</p>
                 </div>
             </div>
         </body>
@@ -267,13 +267,13 @@ def get_customer_confirmation_template(data, language='en'):
                     </ul>
 
                     <div class="cta">
-                        <a href="mailto:info@rocketlogistic.bg" class="button">Contact Us</a>
+                        <a href="mailto:office@r-logistic.com" class="button">Contact Us</a>
                     </div>
                 </div>
                 <div class="footer">
                     <p><strong>Rocket Logistic</strong></p>
                     <p>115 Tsarigradsko Shose Blvd., Sofia 1784, Bulgaria</p>
-                    <p>Phone: +359 2 812 3456 | Email: info@rocketlogistic.bg</p>
+                    <p>Phone: +359 2 812 3456 | Email: office@r-logistic.com</p>
                 </div>
             </div>
         </body>

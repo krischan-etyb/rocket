@@ -201,7 +201,7 @@ def get_quote_customer_confirmation_template(
         next_steps = [
             "Нашият екип ще прегледа заявката ви.",
             "Ще получите потвърждение с окончателна цена.",
-            "При въпроси: <a href='mailto:info@rocketlogistic.bg'>info@rocketlogistic.bg</a>",
+            "При въпроси: <a href='mailto:office@r-logistic.com'>office@r-logistic.com</a>",
         ]
         footer_thanks = "Благодарим ви, че се доверявате на Rocket Logistic!"
         service_label = "Вид услуга"
@@ -223,7 +223,7 @@ def get_quote_customer_confirmation_template(
         next_steps = [
             "Our team will review your request.",
             "You will receive a confirmation with the final price.",
-            "For questions: <a href='mailto:info@rocketlogistic.bg'>info@rocketlogistic.bg</a>",
+            "For questions: <a href='mailto:office@r-logistic.com'>office@r-logistic.com</a>",
         ]
         footer_thanks = "Thank you for choosing Rocket Logistic!"
         service_label = "Service type"
