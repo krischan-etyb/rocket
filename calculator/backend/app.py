@@ -768,6 +768,12 @@ def serve_calculator_bg_index() -> Response:
     return send_file(str(_FRONTEND_DIR / "bg" / "index.html"))
 
 
+@app.route("/calculator/<path:filename>")
+def serve_calculator_static(filename: str) -> Response:
+    """Serve calculator frontend static files (JS, CSS, images)."""
+    return send_from_directory(str(_FRONTEND_DIR), filename)
+
+
 # ===========================================================================
 # Error handlers
 # ===========================================================================
