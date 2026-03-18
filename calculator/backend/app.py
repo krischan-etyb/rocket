@@ -30,7 +30,7 @@ from pathlib import Path
 from typing import Any
 
 from dotenv import load_dotenv
-from flask import Flask, Response, jsonify, request, send_file, send_from_directory
+from flask import Flask, Response, jsonify, redirect, request, send_file, send_from_directory
 from flask_cors import CORS
 
 # ---------------------------------------------------------------------------
@@ -747,6 +747,12 @@ def api_contact() -> tuple[Response, int]:
 
 @app.route("/")
 def serve_index() -> Response:
+    return redirect("/bg/", code=302)
+
+
+@app.route("/en/")
+@app.route("/en")
+def serve_en_index() -> Response:
     return send_file(str(_PROJECT_ROOT / "index.html"))
 
 
