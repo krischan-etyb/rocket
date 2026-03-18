@@ -742,6 +742,33 @@ def api_contact() -> tuple[Response, int]:
 
 
 # ===========================================================================
+# Static page routes — serve index.html for directory-style URLs
+# ===========================================================================
+
+@app.route("/")
+def serve_index() -> Response:
+    return send_file(str(_PROJECT_ROOT / "index.html"))
+
+
+@app.route("/bg/")
+@app.route("/bg")
+def serve_bg_index() -> Response:
+    return send_file(str(_PROJECT_ROOT / "bg" / "index.html"))
+
+
+@app.route("/calculator/")
+@app.route("/calculator")
+def serve_calculator_index() -> Response:
+    return send_file(str(_FRONTEND_DIR / "index.html"))
+
+
+@app.route("/calculator/bg/")
+@app.route("/calculator/bg")
+def serve_calculator_bg_index() -> Response:
+    return send_file(str(_FRONTEND_DIR / "bg" / "index.html"))
+
+
+# ===========================================================================
 # Error handlers
 # ===========================================================================
 
