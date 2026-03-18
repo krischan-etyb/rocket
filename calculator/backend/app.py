@@ -780,6 +780,21 @@ def serve_calculator_static(filename: str) -> Response:
     return send_from_directory(str(_FRONTEND_DIR), filename)
 
 
+@app.route("/css/<path:filename>")
+def serve_css(filename: str) -> Response:
+    return send_from_directory(str(_PROJECT_ROOT / "css"), filename)
+
+
+@app.route("/js/<path:filename>")
+def serve_js(filename: str) -> Response:
+    return send_from_directory(str(_PROJECT_ROOT / "js"), filename)
+
+
+@app.route("/assets/<path:filename>")
+def serve_assets(filename: str) -> Response:
+    return send_from_directory(str(_PROJECT_ROOT / "assets"), filename)
+
+
 # ===========================================================================
 # Error handlers
 # ===========================================================================
