@@ -292,7 +292,11 @@ a:hover {
 .price-calculator__form {
     display: flex;
     flex-direction: column;
-    gap: var(--space-md);
+    gap: 0;
+    background: white;
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-card);
 }
 
 .price-calculator__result {
@@ -307,10 +311,7 @@ a:hover {
    8. Calc Groups (visual card sections inside the form)
    ------------------------------------------------------------ */
 .calc-group {
-    background: white;
-    border-radius: var(--radius-md);
-    padding: var(--space-lg);
-    box-shadow: var(--shadow-card);
+    padding: 0;
 }
 
 .calc-group__title {
@@ -1176,7 +1177,7 @@ input[type="date"] {
     }
 
     .calc-group {
-        padding: var(--space-md);
+        padding: 0;
     }
 
     .service-tabs__option {
