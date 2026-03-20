@@ -42,7 +42,7 @@
   "rates": {
     "domestic": {
       "ftl_eur_per_km":        1.00,
-      "ltl_eur_per_m2_per_km": 0.075
+      "ltl_eur_per_m2_per_km": 0.059
     },
     "international": {
       "ftl_eur_per_km":        1.30,
