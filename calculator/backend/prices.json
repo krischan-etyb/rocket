@@ -53,7 +53,7 @@
   "country_multipliers": {
     "RO": { "import": 1.00, "export": 1.00 },
     "GR": { "import": 1.00, "export": 1.00 },
-    "DE": { "import": 1.00, "export": 1.00 },
+    "DE": { "import": 1.11, "export": 0.90 },
     "AT": { "import": 1.00, "export": 1.00 },
     "HU": { "import": 1.00, "export": 1.00 },
     "PL": { "import": 1.00, "export": 1.00 },
