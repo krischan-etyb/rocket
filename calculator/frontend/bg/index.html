@@ -108,30 +108,6 @@
             gap: var(--space-md);
         }
 
-        /* Toggle optional */
-        .toggle-optional {
-            display: inline-flex;
-            align-items: center;
-            background: none;
-            border: none;
-            color: var(--color-primary);
-            font-family: var(--font-heading, 'Inter', sans-serif);
-            font-weight: 600;
-            font-size: var(--fs-sm, 0.875rem);
-            cursor: pointer;
-            padding: var(--space-xs) 0;
-            transition: var(--transition);
-            min-height: 44px;
-        }
-
-        .toggle-optional:hover {
-            color: var(--color-accent);
-        }
-
-        .optional-fields {
-            margin-top: var(--space-md);
-        }
-
         /* Estimate card */
         .estimate-card {
             background-color: var(--color-white);
@@ -585,45 +561,34 @@
 
                         </div>
 
-                        <!-- OPTIONAL: Collapsed by default -->
+                        <!-- Date fields -->
                         <div class="calc-group">
-                            <button
-                                type="button"
-                                class="toggle-optional"
-                                id="toggle-optional-btn"
-                                aria-expanded="false"
-                                aria-controls="optional-fields"
-                            >
-                                + &#1044;&#1086;&#1087;&#1098;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1085;&#1080; &#1087;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1086;&#1089;&#1090;&#1080;
-                            </button>
-                            <div class="optional-fields" id="optional-fields" hidden>
-                                <div class="form-row date-flexibility-row">
-                                    <!-- Load date -->
-                                    <div class="form-group">
-                                        <label id="label-load-date" for="load_date">&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;</label>
-                                        <input
-                                            type="date"
-                                            id="load_date"
-                                            name="load_date"
-                                            aria-label="&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;"
-                                        >
-                                    </div>
+                            <div class="form-row date-flexibility-row">
+                                <!-- Load date -->
+                                <div class="form-group">
+                                    <label id="label-load-date" for="load_date">&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;</label>
+                                    <input
+                                        type="date"
+                                        id="load_date"
+                                        name="load_date"
+                                        aria-label="&#1046;&#1077;&#1083;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072; &#1085;&#1072; &#1090;&#1086;&#1074;&#1072;&#1088;&#1077;&#1085;&#1077;"
+                                    >
+                                </div>
 
-                                    <!-- Date flexibility -->
-                                    <div class="form-group">
-                                        <label id="label-flexibility">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1086;&#1089;&#1090; &#1085;&#1072; &#1076;&#1072;&#1090;&#1072;&#1090;&#1072;</label>
-                                        <div class="pallet-type-options" role="group" aria-labelledby="label-flexibility">
-                                            <label class="checkbox-label">
-                                                <input type="radio" name="date_flexibility" value="flexible" checked>
-                                                <span class="checkbox-box"></span>
-                                                <span id="opt-flexible">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1072;</span>
-                                            </label>
-                                            <label class="checkbox-label">
-                                                <input type="radio" name="date_flexibility" value="fixed">
-                                                <span class="checkbox-box"></span>
-                                                <span id="opt-fixed">&#1060;&#1080;&#1082;&#1089;&#1080;&#1088;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072;</span>
-                                            </label>
-                                        </div>
+                                <!-- Date flexibility -->
+                                <div class="form-group">
+                                    <label id="label-flexibility">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1086;&#1089;&#1090; &#1085;&#1072; &#1076;&#1072;&#1090;&#1072;&#1090;&#1072;</label>
+                                    <div class="pallet-type-options" role="group" aria-labelledby="label-flexibility">
+                                        <label class="checkbox-label">
+                                            <input type="radio" name="date_flexibility" value="flexible" checked>
+                                            <span class="checkbox-box"></span>
+                                            <span id="opt-flexible">&#1043;&#1098;&#1074;&#1082;&#1072;&#1074;&#1072;</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="radio" name="date_flexibility" value="fixed">
+                                            <span class="checkbox-box"></span>
+                                            <span id="opt-fixed">&#1060;&#1080;&#1082;&#1089;&#1080;&#1088;&#1072;&#1085;&#1072; &#1076;&#1072;&#1090;&#1072;</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

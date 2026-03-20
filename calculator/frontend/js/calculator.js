@@ -48,8 +48,6 @@ const STRINGS = {
     label_flexibility:        'Date flexibility',
     opt_flexible:             'Flexible',
     opt_fixed:                'Fixed date',
-    toggle_optional:          '+ Optional details',
-    toggle_optional_hide:     '\u2212 Optional details',
     estimate_label:           'Estimated price',
     estimate_secondary:       'approx.',
     fill_fields:              'Fill in details above to see estimate.',
@@ -123,8 +121,6 @@ const STRINGS = {
     label_flexibility:        '\u0413\u044a\u0432\u043a\u0430\u0432\u043e\u0441\u0442 \u043d\u0430 \u0434\u0430\u0442\u0430\u0442\u0430',
     opt_flexible:             '\u0413\u044a\u0432\u043a\u0430\u0432\u0430',
     opt_fixed:                '\u0424\u0438\u043a\u0441\u0438\u0440\u0430\u043d\u0430 \u0434\u0430\u0442\u0430',
-    toggle_optional:          '+ \u0414\u043e\u043f\u044a\u043b\u043d\u0438\u0442\u0435\u043b\u043d\u0438 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438',
-    toggle_optional_hide:     '\u2212 \u0414\u043e\u043f\u044a\u043b\u043d\u0438\u0442\u0435\u043b\u043d\u0438 \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u043e\u0441\u0442\u0438',
     estimate_label:           '\u041f\u0440\u0438\u0431\u043b\u0438\u0437\u0438\u0442\u0435\u043b\u043d\u0430 \u0446\u0435\u043d\u0430',
     estimate_secondary:       '\u043f\u0440\u0438\u0431\u043b.',
     fill_fields:              '\u041f\u043e\u043f\u044a\u043b\u043d\u0435\u0442\u0435 \u0434\u0430\u043d\u043d\u0438\u0442\u0435 \u043f\u043e-\u0433\u043e\u0440\u0435, \u0437\u0430 \u0434\u0430 \u0432\u0438\u0434\u0438\u0442\u0435 \u043e\u0446\u0435\u043d\u043a\u0430\u0442\u0430.',
@@ -472,7 +468,6 @@ let originCountrySelect, originCitySelect, originCityText;
 let destCountrySelect,   destCitySelect,   destCityText;
 let ftlFields, ltlFields;
 let palletTypeGroup, dimFields;
-let toggleOptionalBtn, optionalFields;
 let btnCalculate, btnGetQuote, btnGetQuoteNorate, btnSubmit;
 
 // Estimate card state elements
@@ -515,9 +510,6 @@ function bindDOMRefs() {
 
   palletTypeGroup    = document.getElementById('pallet-type-group');
   dimFields          = document.getElementById('dim-fields');
-
-  toggleOptionalBtn  = document.getElementById('toggle-optional-btn');
-  optionalFields     = document.getElementById('optional-fields');
 
   btnCalculate       = document.getElementById('btn-calculate');
   btnGetQuote        = document.getElementById('btn-get-quote');
@@ -588,8 +580,7 @@ function applyStrings() {
   setOption('opt-refrigerated',  t.opt_refrigerated);
   setOption('opt-flatbed',       t.opt_flatbed);
 
-  // Optional fields
-  if (toggleOptionalBtn) toggleOptionalBtn.textContent = t.toggle_optional;
+  // Date fields
   setLabel('label-load-date',    t.label_load_date);
   setLabel('label-flexibility',  t.label_flexibility);
   setOption('opt-flexible',      t.opt_flexible);
@@ -769,8 +760,6 @@ function attachEventListeners() {
   document.querySelectorAll('input[name="pallet_type"]').forEach(r => r.addEventListener('change', onNonPalletChange));
 
   // Optional toggle
-  if (toggleOptionalBtn) toggleOptionalBtn.addEventListener('click', onToggleOptional);
-
   // Calculate button
   if (btnCalculate) btnCalculate.addEventListener('click', onCalculateClick);
 
@@ -868,17 +857,8 @@ function onNonPalletChange() {
 }
 
 // ---------------------------------------------------------------------------
-// 14. Optional fields toggle
 // ---------------------------------------------------------------------------
-function onToggleOptional() {
-  const isHidden = optionalFields.hidden;
-  optionalFields.hidden = !isHidden;
-  toggleOptionalBtn.setAttribute('aria-expanded', String(!isHidden));
-  toggleOptionalBtn.textContent = !isHidden ? t.toggle_optional : t.toggle_optional_hide;
-}
-
-// ---------------------------------------------------------------------------
-// 15. Input change — reset estimate so stale results don't persist
+// 14. Input change — reset estimate so stale results don't persist
 // ---------------------------------------------------------------------------
 function onInputChange() {
   clearCalcFieldErrors();

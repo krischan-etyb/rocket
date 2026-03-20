@@ -589,45 +589,34 @@
 
                         </div>
 
-                        <!-- OPTIONAL: Collapsed by default -->
+                        <!-- Date fields -->
                         <div class="calc-group">
-                            <button
-                                type="button"
-                                class="toggle-optional"
-                                id="toggle-optional-btn"
-                                aria-expanded="false"
-                                aria-controls="optional-fields"
-                            >
-                                + Optional details
-                            </button>
-                            <div class="optional-fields" id="optional-fields" hidden>
-                                <div class="form-row date-flexibility-row">
-                                    <!-- Load date -->
-                                    <div class="form-group">
-                                        <label id="label-load-date" for="load_date">Desired load date</label>
-                                        <input
-                                            type="date"
-                                            id="load_date"
-                                            name="load_date"
-                                            aria-label="Desired load date"
-                                        >
-                                    </div>
+                            <div class="form-row date-flexibility-row">
+                                <!-- Load date -->
+                                <div class="form-group">
+                                    <label id="label-load-date" for="load_date">Desired load date</label>
+                                    <input
+                                        type="date"
+                                        id="load_date"
+                                        name="load_date"
+                                        aria-label="Desired load date"
+                                    >
+                                </div>
 
-                                    <!-- Date flexibility -->
-                                    <div class="form-group">
-                                        <label id="label-flexibility">Date flexibility</label>
-                                        <div class="pallet-type-options" role="group" aria-labelledby="label-flexibility">
-                                            <label class="checkbox-label">
-                                                <input type="radio" name="date_flexibility" value="flexible" checked>
-                                                <span class="checkbox-box"></span>
-                                                <span id="opt-flexible">Flexible</span>
-                                            </label>
-                                            <label class="checkbox-label">
-                                                <input type="radio" name="date_flexibility" value="fixed">
-                                                <span class="checkbox-box"></span>
-                                                <span id="opt-fixed">Fixed date</span>
-                                            </label>
-                                        </div>
+                                <!-- Date flexibility -->
+                                <div class="form-group">
+                                    <label id="label-flexibility">Date flexibility</label>
+                                    <div class="pallet-type-options" role="group" aria-labelledby="label-flexibility">
+                                        <label class="checkbox-label">
+                                            <input type="radio" name="date_flexibility" value="flexible" checked>
+                                            <span class="checkbox-box"></span>
+                                            <span id="opt-flexible">Flexible</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="radio" name="date_flexibility" value="fixed">
+                                            <span class="checkbox-box"></span>
+                                            <span id="opt-fixed">Fixed date</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>

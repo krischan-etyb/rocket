@@ -634,37 +634,6 @@ input[type="date"] {
 }
 
 /* ------------------------------------------------------------
-   15. Optional Fields Toggle
-   ------------------------------------------------------------ */
-.toggle-optional {
-    background: none;
-    border: none;
-    color: var(--color-primary);
-    font-family: var(--font-family);
-    font-size: 0.9rem;
-    font-weight: var(--font-weight-semibold);
-    cursor: pointer;
-    padding: var(--space-xs) 0;
-    display: inline-block;
-    transition: color var(--transition);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.toggle-optional:hover {
-    color: var(--color-accent);
-}
-
-.optional-fields {
-    margin-top: var(--space-md);
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-}
-
-/* ------------------------------------------------------------
    15. Buttons
    ------------------------------------------------------------ */
 .btn {
