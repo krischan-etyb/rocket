@@ -55,6 +55,7 @@ class PricingEngine:
         self._ltl_config: dict[str, Any] = self._prices["ltl_config"]
         self._rates: dict[str, Any] = self._prices["rates"]
         self._country_multipliers: dict[str, Any] = self._prices.get("country_multipliers", {})
+        self._city_multipliers: dict[str, float] = self._prices.get("city_multipliers", {})
         self._last_mtime = self._path.stat().st_mtime
         logger.info("Prices loaded from %s", self._path)
 
@@ -106,6 +107,13 @@ class PricingEngine:
                 data.get("destination_country", ""),
             )
             base_price *= country_mult
+
+        city_mult = self._get_city_multiplier(
+            data.get("origin_city", ""),
+            data.get("destination", ""),
+        )
+        base_price *= city_mult
+
         date_flexibility: str = data.get("date_flexibility", "flexible")
 
         # --- surcharges ---
@@ -136,6 +144,7 @@ class PricingEngine:
                 "express_surcharge": round(express_surcharge, 2),
                 "dangerous_goods_surcharge": 0,
                 "country_multiplier": round(country_mult, 4),
+                "city_multiplier": round(city_mult, 4),
                 "distance_km": round(distance_km, 1),
             },
             "disclaimer": "Indicative estimate only. Final price subject to confirmation.",
@@ -166,6 +175,23 @@ class PricingEngine:
         if origin == "BG":
             return float(self._country_multipliers.get(destination, {}).get("export", 1.0))
         return float(self._country_multipliers.get(origin, {}).get("import", 1.0))
+
+    def _get_city_multiplier(self, origin_city: str, destination_city: str) -> float:
+        """Return combined multiplier for origin and destination cities.
+
+        Both multipliers are applied multiplicatively — if both cities carry
+        a surcharge, both are included.
+        """
+        origin_mult = 1.0
+        dest_mult = 1.0
+        for city, mult in self._city_multipliers.items():
+            if city.startswith("_"):
+                continue
+            if origin_city and city.lower() == origin_city.lower():
+                origin_mult = float(mult)
+            if destination_city and city.lower() == destination_city.lower():
+                dest_mult = float(mult)
+        return origin_mult * dest_mult
 
     # ------------------------------------------------------------------
     # FTL

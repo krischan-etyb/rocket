@@ -51,7 +51,7 @@
   },
 
   "country_multipliers": {
-    "RO": { "import": 1.00, "export": 1.00 },
+    "RO": { "import": 1.10, "export": 0.95 },
     "GR": { "import": 1.00, "export": 1.00 },
     "DE": { "import": 1.11, "export": 0.90 },
     "AT": { "import": 1.00, "export": 1.00 },
@@ -67,6 +67,12 @@
     "TR": { "import": 1.00, "export": 1.00 },
     "RS": { "import": 1.00, "export": 1.00 },
     "MK": { "import": 1.00, "export": 1.00 }
+  },
+
+  "city_multipliers": {
+    "_comment": "Multiplier applied when city is origin or destination. 1.0 = no surcharge.",
+    "Sofia": 1.05,
+    "Istanbul": 1.10
   },
 
   "distances_km": {}
