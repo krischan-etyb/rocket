@@ -71,8 +71,9 @@
 
   "city_multipliers": {
     "_comment": "Multiplier applied when city is origin or destination. 1.0 = no surcharge.",
-    "Sofia": 1.05,
-    "Istanbul": 1.10
+    "Sofia": 1.00,
+    "Istanbul": 1.10,
+    "Athens": 1.15
   },
 
   "distances_km": {}
