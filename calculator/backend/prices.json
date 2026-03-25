@@ -54,26 +54,27 @@
     "RO": { "import": 1.10, "export": 0.95 },
     "GR": { "import": 0.80, "export": 1.00 },
     "DE": { "import": 1.11, "export": 0.90 },
-    "AT": { "import": 1.00, "export": 1.00 },
-    "HU": { "import": 1.00, "export": 1.00 },
-    "PL": { "import": 1.00, "export": 1.00 },
-    "CZ": { "import": 1.00, "export": 1.00 },
-    "SK": { "import": 1.00, "export": 1.00 },
-    "IT": { "import": 1.00, "export": 1.00 },
-    "FR": { "import": 1.00, "export": 1.00 },
-    "ES": { "import": 1.00, "export": 1.00 },
-    "NL": { "import": 1.00, "export": 1.00 },
-    "BE": { "import": 1.00, "export": 1.00 },
-    "TR": { "import": 1.00, "export": 1.00 },
-    "RS": { "import": 1.00, "export": 1.00 },
-    "MK": { "import": 1.00, "export": 1.00 }
+    "AT": { "import": 0.80, "export": 1.45 },
+    "HU": { "import": 1.15, "export": 0.90 },
+    "PL": { "import": 1.20, "export": 0.75 },
+    "CZ": { "import": 1.41, "export": 0.77 },
+    "SK": { "import": 1.50, "export": 0.67 },
+    "IT": { "import": 1.45, "export": 0.68 },
+    "FR": { "import": 1.24, "export": 0.93 },
+    "ES": { "import": 1.17, "export": 0.82 },
+    "NL": { "import": 1.35, "export": 0.93 },
+    "BE": { "import": 1.34, "export": 0.90 },
+    "TR": { "import": 1.80, "export": 0.87 },
+    "RS": { "import": 1.10, "export": 1.10 },
+    "MK": { "import": 1.05, "export": 1.10 }
   },
 
   "city_multipliers": {
     "_comment": "Multiplier applied when city is origin or destination. 1.0 = no surcharge.",
     "Sofia": 1.00,
     "Istanbul": 1.10,
-    "Athens": 1.15
+    "Athens": 1.15,
+    "Nis" : 1.30
   },
 
   "distances_km": {}
