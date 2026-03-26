@@ -46,7 +46,7 @@
     },
     "international": {
       "ftl_eur_per_km":        1.10,
-      "ltl_eur_per_m2_per_km": 0.090
+      "ltl_eur_per_m2_per_km": 0.05
     }
   },
 
